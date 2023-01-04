@@ -4,7 +4,8 @@ import SingleProduct from './components/single-product page/singleProduct';
 
 function App() {
   return (
-    <div></div>
+    
+    <div><SingleProduct /></div>
   );
 }
 
