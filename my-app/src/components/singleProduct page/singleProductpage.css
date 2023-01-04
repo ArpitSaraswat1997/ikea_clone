@@ -14,13 +14,13 @@
     width: 100%;
 }
 .productImg>img{
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
 }
 .container{
     width: 85%;
     margin: auto;
-    gap: 20px;
+    gap: 50px;
     margin-top: 70px;
     display: grid;
     grid-template-columns: 5fr 3fr;
@@ -28,18 +28,20 @@
 .checkin{
     border: 1px solid rgb(222, 221, 221);
     height: 50px;
+    /* color: rgb(109, 106, 106); */
     border-radius: 10px;
     display: flex;
     gap: 20px;
-    width: 80%;
+    width: 100%;
     align-items: center;
+    padding-top: 10px;
 }
 .pinCheck{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
-    
+    margin-left: -8px;
 }
 .pinCheck>input{
     border: none;
@@ -53,14 +55,45 @@
     border-radius: 17px;
     background-color: black;
     color: white;
-    padding: 11px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.pinCheck>button:hover{
+    background-color: rgb(40, 40, 40);
 }
 .delivey{
     display: flex;
     gap: 20px;
-    align-items:center
+    align-items:center;
 }
 .abc{
     display: flex;
     align-items: center;
+}
+.addToCart{
+    width: 100%;
+    margin: auto;
+    padding: 13px;
+    border: none;
+    background-color: rgb(27, 106, 151);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.addToCart:hover{
+    background-color: rgb(19, 80, 116);
+}
+.siderRight{
+    height: 220px;
+    background-color: rgb(3, 80, 152)
+}
+.sidebarText{
+    color: white;
+    margin-left: 15%;
+    font-weight: bolder;
+}
+.sidebarText>a{
+    color: white;
 }
