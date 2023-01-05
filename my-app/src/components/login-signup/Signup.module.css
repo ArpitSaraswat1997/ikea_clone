@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+Link{
+    font-weight: bolder;
+    color: #484848;
+}
+/* Left Div */
+
+.leftDiv{
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    /* height: 700px; */
+    width: 40%;
+    float: left;
+    padding:30px;
+    font-size: small;
+}
+
+/* Right Div */
+.rightDiv{
+    height: 100%;
+    width: 60%;
+    float: left;
+    padding:30px;
+}
+
+/* 
+.userinputwrp {
+	position: relative;
+	width: 50%;
+}
+.userinputwrp .inputText{
+	width: 100%;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #777;
+ 	box-shadow: none !important;
+}
+.userinputwrp .inputText:focus{
+	border-color: blue;
+	border-width: medium medium 2px;
+}
+.userinputwrp .floatinglabel {
+	position: absolute;
+	pointer-events: none;
+	top: 18px;
+	left: 10px;
+	transition: 0.2s ease all;
+}
+.userinputwrp input:focus ~ .floatinglabel,
+.userinputwrp input:not(:focus):valid ~ .floatinglabel{
+	top: 0px;
+	left: 10px;
+	font-size: 13px;
+	opacity: 1;
+} */
+
+/* <div className={styles.inputWrapper}>
+    <br />
+    <input type="text" className={styles.inputFiled} required />
+    <span className={styles.floatingSpan}>Enter your Email</span>
+</div> */
+.rightDiv form select{
+    width: 70%;
+}
+.inputWrapper{
+    position: relative;
+	width: 100%;
+}
+.inputWrapper .inputFiled {
+    width: 100%;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #777;
+ 	box-shadow: none !important;
+}
+.inputWrapper .inputFiled:focus{
+    border-color: blue;
+	border-width: medium medium 2px;
+}
+.inputWrapper .floatingSpan{
+    position: absolute;
+	pointer-events: none;
+	top: 18px;
+	left: 10px;
+	transition: 0.2s ease all;
+}
+.inputWrapper input:focus ~ .floatingSpan,
+.inputWrapper input:not(:focus):valid ~ .floatingSpan{
+    top: 0px;
+	left: 10px;
+	font-size: 13px;
+	opacity: 1;
+}

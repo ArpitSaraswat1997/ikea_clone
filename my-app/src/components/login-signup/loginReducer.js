@@ -1,7 +1,5 @@
-
-
-function AuthReducer(){
-
+function AuthReducer(state = 10) {
+  return state;
 }
 
-export default AuthReducer
+export default AuthReducer;

@@ -8,18 +8,21 @@ function Login(props) {
     <div className={styles.container}>
       <div className={styles.leftDiv}>
         <div>
-          <button
-            style={{
-              marginLeft: "-45px",
-              fontSize: "40px",
-              background: "none",
-              border: "none",
-              color: "white",
-              cursor: "pointer",
-            }}
-          >
-            ⬅
-          </button>
+          <Link to="/">
+            <button
+              type="button"
+              style={{
+                marginLeft: "-45px",
+                fontSize: "40px",
+                background: "none",
+                border: "none",
+                color: "white",
+                cursor: "pointer",
+              }}
+            >
+              ⬅
+            </button>
+          </Link>
           <img
             src="https://in.accounts.ikea.com/resources/static/logo.svg"
             alt="IkeaLogoImg"
@@ -71,7 +74,9 @@ function Login(props) {
         </form>
         <div>
           <h4>Do not have an IKEA account? Create one now.</h4>
-          <button>I'm buying for my home</button>
+          <Link to="/signup">
+            <button>I'm buying for my home</button>
+          </Link>
           <br />
           <br />
           <button>I'm buying for my company</button>
