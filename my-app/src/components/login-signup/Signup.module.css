@@ -4,7 +4,7 @@
     height: 100%;
     padding: 0;
     margin: 0;
-    gap: 30px;
+    gap: 35px;
 }
 Link{
     font-weight: bolder;
@@ -16,11 +16,14 @@ Link{
     display: grid;
     justify-content: space-between;
     align-content: space-between;
-    /* height: 700px; */
     width: 40%;
     float: left;
     padding:30px;
     font-size: small;
+}
+
+.leftDiv h1{
+    margin-bottom: -15px;
 }
 
 /* Right Div */
@@ -28,47 +31,25 @@ Link{
     height: 100%;
     width: 60%;
     float: left;
-    padding:30px;
+    padding:50px;
 }
 
-/* 
-.userinputwrp {
-	position: relative;
-	width: 50%;
+.rightDiv input[checkbox]{
+    size: 40px;
 }
-.userinputwrp .inputText{
-	width: 100%;
-	outline: none;
-	border:none;
-	border-bottom: 1px solid #777;
- 	box-shadow: none !important;
+input[type=checkbox],
+input[type=radio]{
+    width: 25px;
+    height: 25px; 
+    margin-right: 10px; 
 }
-.userinputwrp .inputText:focus{
-	border-color: blue;
-	border-width: medium medium 2px;
-}
-.userinputwrp .floatinglabel {
-	position: absolute;
-	pointer-events: none;
-	top: 18px;
-	left: 10px;
-	transition: 0.2s ease all;
-}
-.userinputwrp input:focus ~ .floatinglabel,
-.userinputwrp input:not(:focus):valid ~ .floatinglabel{
-	top: 0px;
-	left: 10px;
-	font-size: 13px;
-	opacity: 1;
-} */
 
-/* <div className={styles.inputWrapper}>
-    <br />
-    <input type="text" className={styles.inputFiled} required />
-    <span className={styles.floatingSpan}>Enter your Email</span>
-</div> */
 .rightDiv form select{
     width: 70%;
+    height: 50px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 .inputWrapper{
     position: relative;
@@ -96,6 +77,15 @@ Link{
 .inputWrapper input:not(:focus):valid ~ .floatingSpan{
     top: 0px;
 	left: 10px;
-	font-size: 13px;
+	font-size: 18px;
 	opacity: 1;
+}
+
+.rightDiv form button{
+    width: 80%;
+    background-color: #111111;
+    color: white;
+    height: 80px;
+    border-radius: 40px;
+    font-weight: bolder;
 }

@@ -1,16 +1,48 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Signup.module.css";
+import { useDispatch } from "react-redux";
+import { SignupThunkActionCreator } from "./AuthReducer/Actions";
 
 function Signup(props) {
   const [accountType, setAccountType] = useState({
     type: "familyAccount",
   });
+  const [input, setInput] = useState({
+    firstName: "",
+    surname: "",
+    mobile: null,
+    birthDate: null,
+    gender: "",
+    postCode: "",
+    store: "",
+    email: "",
+    password: "",
+    contactOnEmail: "OK",
+    contactOnSms: "OK",
+    contactOnDirectMail: "OK",
+    terms: "",
+  });
+  const dispatch = useDispatch();
+  const handleFormChange = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
+    console.log(e.target.name, "  ", e.target.value);
+  };
   function handleAccountType(event) {
     setAccountType({ type: event.target.value });
     console.log(event.target.value);
   }
-  const handleForm = (e) => {};
+  const handleForm = (e) => {
+    e.preventDefault();
+    console.log(input);
+    dispatch(SignupThunkActionCreator(input));
+  };
+  // useEffect(()=>{
+
+  // },[form])
   return (
     <div className={styles.container}>
       <div className={styles.leftDiv}>
@@ -18,7 +50,7 @@ function Signup(props) {
           <h1>
             Create an{" "}
             {accountType.type == "familyAccount" ? (
-              <span>IKEA Family</span>
+              <span style={{ color: "#0058a3" }}>IKEA Family</span>
             ) : (
               "IKEA"
             )}{" "}
@@ -35,6 +67,7 @@ function Signup(props) {
             Become a member of IKEA Family today. Did we mention it's free to
             join?
           </h3>
+          <br />
           <div onChange={handleAccountType}>
             <input
               type="radio"
@@ -57,27 +90,47 @@ function Signup(props) {
             <Link>Get the details</Link>
             <br />
             <br />
+            <br />
+            <br />
           </div>
         </div>
         <div>
-          <form>
+          <form onSubmit={handleForm}>
             <div className={styles.inputWrapper}>
               <br />
-              <input type="text" className={styles.inputFiled} required />
+              <input
+                type="text"
+                name="firstName"
+                className={styles.inputFiled}
+                onChange={handleFormChange}
+                required
+              />
               <span className={styles.floatingSpan}>First Name</span>
             </div>
             <br />
             <br />
             <div className={styles.inputWrapper}>
               <br />
-              <input type="text" className={styles.inputFiled} required />
+              <input
+                type="text"
+                name="surname"
+                className={styles.inputFiled}
+                onChange={handleFormChange}
+                required
+              />
               <span className={styles.floatingSpan}>Surname</span>
             </div>
             <br />
             <br />
             <div className={styles.inputWrapper}>
               <br />
-              <input type="tel" className={styles.inputFiled} required />
+              <input
+                type="tel"
+                name="mobile"
+                className={styles.inputFiled}
+                onChange={handleFormChange}
+                required
+              />
               <span className={styles.floatingSpan}>Mobile</span>
             </div>
             <br />
@@ -85,62 +138,112 @@ function Signup(props) {
             <div className={styles.inputWrapper}>
               <br />
               <input
-                type="date"
+                type="text"
+                name="birthDate"
                 className={styles.inputFiled}
-                placeholder=""
+                onFocus={(e) => (e.target.type = "date")}
+                onBlur={(e) => (e.target.type = "text")}
+                onChange={handleFormChange}
                 required
               />
               <span className={styles.floatingSpan}>BirthDate</span>
             </div>
             <br />
             <br />
-            <select name="gender">
+            <select name="gender" onChange={handleFormChange}>
               <option value="">Gender</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
+              <option value="other">Other</option>
             </select>
             <br />
             <br />
             <div className={styles.inputWrapper}>
               <br />
-              <input type="number" className={styles.inputFiled} required />
+              <input
+                type="number"
+                name="postCode"
+                className={styles.inputFiled}
+                onChange={handleFormChange}
+                required
+              />
               <span className={styles.floatingSpan}>Post Code</span>
             </div>
             <br />
             <br />
-            <select name="contactType">
+            <select name="store" onChange={handleFormChange}>
               <option value="">Preferred Store</option>
               <option value="online">Online</option>
-              <option value="offline">Offline</option>
+              <option value="offline">Store</option>
             </select>
             <br />
             <br />
             <div className={styles.inputWrapper}>
               <br />
-              <input type="email" className={styles.inputFiled} required />
+              <input
+                type="email"
+                name="email"
+                className={styles.inputFiled}
+                onChange={handleFormChange}
+                required
+              />
               <span className={styles.floatingSpan}>Email(username)</span>
             </div>
             <br />
             <br />
             <div className={styles.inputWrapper}>
               <br />
-              <input type="password" className={styles.inputFiled} required />
+              <input
+                type="password"
+                name="password"
+                className={styles.inputFiled}
+                onChange={handleFormChange}
+                required
+              />
               <span className={styles.floatingSpan}>Password</span>
             </div>
             <br />
             <br />
-            <input type="checkbox" value="" name="" checked={""} />
+            <input
+              type="checkbox"
+              checked={
+                input.contactOnEmail == "OK" ||
+                input.contactOnSms == "OK" ||
+                input.contactOnDirectMail == "OK"
+                  ? true
+                  : false
+              }
+              required
+            />
             I would like to receive news, tips and marketing offers from IKEA.
             <br />
             <br />
-            <div onChange={handleForm} style={{ marginLeft: "25px" }}>
-              <input type="checkbox" value="" name="" checked={""} />
+            <div style={{ marginLeft: "25px" }}>
+              <input
+                type="checkbox"
+                value={input.contactOnEmail == "OK" ? "NOT" : "OK"}
+                name="contactOnEmail"
+                onChange={handleFormChange}
+                checked={input.contactOnEmail == "OK" ? true : false}
+              />
               Via email
               <br />
-              <input type="checkbox" value="" name="" checked={""} />
+              <input
+                type="checkbox"
+                value={input.contactOnSms == "OK" ? "NOT" : "OK"}
+                name="contactOnSms"
+                onChange={handleFormChange}
+                checked={input.contactOnSms == "OK" ? true : false}
+              />
               Via SMS
               <br />
-              <input type="checkbox" value="" name="" checked={""} />
+              <input
+                type="checkbox"
+                value={input.contactOnDirectMail == "OK" ? "NOT" : "OK"}
+                name="contactOnDirectMail"
+                onChange={handleFormChange}
+                checked={input.contactOnDirectMail == "OK" ? true : false}
+              />
               Via direct mail
               <br />
             </div>
@@ -148,16 +251,20 @@ function Signup(props) {
             <br />
             <input
               type="checkbox"
-              value=""
-              name="Agree"
-              checked={""}
+              value={input.terms == "OK" ? "NOT" : "OK"}
+              name="terms"
+              onChange={handleFormChange}
+              checked={input.terms === "OK" ? true : false}
               required
             />{" "}
             I have read and understood the{" "}
             <Link to="#">Terms & Conditions</Link> and{" "}
             <Link to="#">Privacy Policy.</Link>
             <br />
-            <button>Create Profile</button>
+            <br />
+            <br />
+            <br />
+            <button type="submit">Create Profile</button>
           </form>
         </div>
       </div>

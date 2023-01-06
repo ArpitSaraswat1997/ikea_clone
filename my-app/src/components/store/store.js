@@ -1,6 +1,7 @@
 import { legacy_createStore, combineReducers, applyMiddleware } from "redux";
 import logger from "redux-logger";
-import AuthReducer from "../login-signup/loginReducer";
+import thunk from "redux-thunk";
+import AuthReducer from "../login-signup/AuthReducer/AuthReducer";
 // import productReducer from "../product page/productReducer";
 
 const combinedReducer = combineReducers({
@@ -9,6 +10,9 @@ const combinedReducer = combineReducers({
   // you can add here your reducers with key
 });
 
-const store = legacy_createStore(combinedReducer, applyMiddleware(logger));
+const store = legacy_createStore(
+  combinedReducer,
+  applyMiddleware(logger, thunk)
+);
 
 export { store };

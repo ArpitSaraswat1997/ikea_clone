@@ -1,8 +1,26 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
+import { useDispatch } from "react-redux";
+import { LoginThunkActionCreator } from "./AuthReducer/Actions";
 
 function Login(props) {
+  const [input, setInput] = useState({
+    email: "",
+    password: "",
+  });
+  const dispatch = useDispatch();
+  const handleChange = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("inLoginFIleInput", input);
+    dispatch(LoginThunkActionCreator(input));
+  };
   //◀
   return (
     <div className={styles.container}>
@@ -51,10 +69,10 @@ function Login(props) {
         </div>
       </div>
       <div className={styles.rightDiv}>
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>Email or Verified Mobile Number</label>
           <br />
-          <input type="email" required />
+          <input type="email" name="email" onChange={handleChange} required />
           <br />
           <span>
             Login <Link to="#">with an OTP</Link>
@@ -63,7 +81,12 @@ function Login(props) {
           <br />
           <label>Password</label>
           <br />
-          <input type="password" required />
+          <input
+            type="password"
+            name="password"
+            onChange={handleChange}
+            required
+          />
           <br />
           <span>
             <Link to="#">Forgot your password?</Link>
