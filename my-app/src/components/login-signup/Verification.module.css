@@ -38,36 +38,25 @@ Link{
     width: 60%;
     float: left;
     padding: 50px 100px 50px 60px;
+    text-align: center;
 }
 
 /* right upper div */
-
-.rightDiv form input {
+.preDiv:first-child{
+    text-align: left;
+}
+.preDiv > input{
+    text-align: left;
     margin-top: 5px;
     width: 100%;
     height: 48px;
     font-size: 16px;
     border-radius: 5px;
     border-color: #929292;
+    /* text-align: left; */
 }
-
-.rightDiv form  button{
-    margin-top: 60px;
-    background-color: #0058a3;
-    color: white;
-    border: none;
-}
-.rightDiv form  button :hover{
-    color: darkblue;
-}
-
 
 /* right bottom div */
-
-.rightDiv h4 {
-    margin-top: 80px;
-    /* background-color: black; */
-}
 
 .rightDiv button {
     cursor: pointer;
@@ -76,4 +65,11 @@ Link{
     padding: 25px;
     border-radius: 35px;
     border-color: #929292;
+}
+
+.pinInput {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    text-align: center;
 }

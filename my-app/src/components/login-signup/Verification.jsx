@@ -1,25 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Verification.module.css";
 import { useSelector } from "react-redux";
+import { PinInput, PinInputField } from "@chakra-ui/react";
 
 function Verification(props) {
-  const handleChange = ({ id, nextId }) => {
-    // If(First.Value.Length){
-    //       Document.GetElementById(Last).Focus();
-    //     }
-    // if (id.value.length) {
-    //   document.getElementById(nextId).focus();
-    // }
-  };
+  const [state, setState] = useState("");
   const mobile = useSelector((store) => {
-    return store.AuthReducer.signup.mobile || null;
+    return store.AuthReducer.signup.mobile || "";
   });
-  const [state, setState] = useState();
-  const handleSubmit = () => {};
-  // useEffect(() => {
-  //   setState(mobile);
-  // }, []);
+  const handleOtp = () => {
+    setState((prevSt) => prevSt + document.getElementById("foo-0").value);
+    setState((prevSt) => prevSt + document.getElementById("foo-1").value);
+    setState((prevSt) => prevSt + document.getElementById("foo-2").value);
+    setState((prevSt) => prevSt + document.getElementById("foo-3").value);
+    setState((prevSt) => prevSt + document.getElementById("foo-4").value);
+    setState((prevSt) => prevSt + document.getElementById("foo-5").value);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.leftDiv}>
@@ -61,54 +58,37 @@ function Verification(props) {
         </div>
       </div>
       <div className={styles.rightDiv}>
-        <form onSubmit={handleSubmit}>
+        <div className={styles.preDiv}>
           <label>username</label>
           <br />
           <input type="text" name="number" value={mobile} />
-          <br />
-          {/* <div className={styles.OTP}>
-            <input
-              type="text"
-              id="1"
-              maxLength="1"
-              nextId="2"
-              onChange={(id, nextId) => handleChange}
-            />
-            <input
-              type="text"
-              id="2"
-              maxLength="1"
-              nextId="3"
-              onChange={(id, nextId) => handleChange}
-            />
-            <input
-              type="text"
-              id="3"
-              maxLength="1"
-              onChange={() => handleChange}
-            />
-            <input
-              type="text"
-              id="4"
-              maxLength="1"
-              onChange={() => handleChange}
-            />
-            <input
-              type="text"
-              id="5"
-              maxLength="1"
-              onChange={() => handleChange}
-            />
-            <input type="text" id="6" maxLength="1" />
-          </div> */}
-
-          <button type="submit">Continue</button>
-          <br />
-          <br />
-        </form>
+        </div>
+        <br />
+        <PinInput id="foo" otp>
+          <PinInputField className={styles.pinInput} />
+          <PinInputField className={styles.pinInput} />
+          <PinInputField className={styles.pinInput} />
+          <PinInputField className={styles.pinInput} />
+          <PinInputField className={styles.pinInput} />
+          <PinInputField className={styles.pinInput} />
+        </PinInput>
+        <div style={{ textAlign: "right" }}>
+          <span>
+            <Link>Send new code</Link>
+          </span>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <button style={{ backgroundColor: "#0058a3" }} onClick={handleOtp}>
+          Continue
+        </button>
+        <br />
+        <br />
         <div>
           <Link to="/signup">
-            <button>not now</button>
+            <button>not now{state}</button>
           </Link>
         </div>
       </div>
@@ -117,19 +97,3 @@ function Verification(props) {
 }
 
 export default Verification;
-
-{
-  /* <Div Class="UserInput">
-    <Input Type="Text" Id='Ist' Maxlength="1" Onkeyup="ClickEvent(This,'Sec')">
-    <Input Type="Text" Id="Sec" Maxlength="1" Onkeyup="ClickEvent(This,'Third')">
-    <Input Type="Text" Id="Third" Maxlength="1" Onkeyup="ClickEvent(This,'Fourth')">
-    <Input Type="Text" Id="Fourth" Maxlength="1" Onkeyup="ClickEvent(This,'Fifth')">
-    <Input Type="Text" Id="Fifth" Maxlength="1">
-</Div> */
-}
-
-// Function ClickEvent(First,Last){
-//     If(First.Value.Length){
-//       Document.GetElementById(Last).Focus();
-//     }
-//   }
