@@ -97,3 +97,9 @@
 .sidebarText>a{
     color: white;
 }
+
+.about{
+    margin-top: 50px;
+    font-size: 22px;
+    color: rgb(77, 76, 76);
+}
