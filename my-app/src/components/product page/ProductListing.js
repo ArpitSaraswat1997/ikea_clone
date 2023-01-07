@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "./productsActions";
@@ -7,64 +7,63 @@ import "./ProListing.css"
 // import ".../App.css"
 
 const ProductPage = () => {
+  let [sort,setSort] = useState("")
+  let [category,setCategory] = useState("")
+  let [price,setPrice] = useState(0)
   const products = useSelector((state) => state.product.products);
+  let n = products
   const dispatch = useDispatch();
   const fetchProducts = () => {
     console.log("sdkjflsdfjl")
     axios.get("https://ik.onrender.com/productWindow")
       .then((res) =>{
-        console.log(res)
+        // console.log(res)
         dispatch(setProducts(res.data));
       } )
       .catch((err) => {
         console.log("Err: ", err);
       });
   };
- 
+//  console.log(sort)
   useEffect(() => {
     fetchProducts();
-
-
   }, []);
   console.log("hello")
-  // console.log("Products :", products);
-
-
 
   return (
     <><div id="filter-bar">
-      <select name="price" id="price">
-        <option value="sort">Sort</option>
+      <select onChange={(e)=>{setSort(e.target.value)}} name="price" id="price">
+        <option value="">Sort</option>
         <option value="#" disabled></option>
         <option value="htl">Price: High to Low</option>
         <option value="#" disabled></option>
         <option value="lth">Price: Low to High</option>
       </select>
-      <select name="beds" id="beds">
-        <option value="category">Category</option>
+      <select onChange={(e)=>{setCategory(e.target.value)}} name="beds" id="beds">
+        <option value="">Category</option>
         <option value="#" disabled></option>
-        <option value="double">Stool</option>
+        <option value="Stool">Stool</option>
         <option value="#" disabled></option>
-        <option value="single">Bed</option>
+        <option value="Bed">Bed</option>
         <option value="#" disabled></option>
-        <option value="sofa">Chaise</option>
+        <option value="Chaise">Chaise</option>
         <option value="#" disabled></option>
-        <option value="sofa">LED</option>
+        <option value="LED">LED</option>
         <option value="#" disabled></option>
-        <option value="sofa">Chair</option>
+        <option value="Chair">Chair</option>
         <option value="#" disabled></option>
-        <option value="sofa">Wardrobe</option>
+        <option value="Wardrobe">Wardrobe</option>
       </select>
-      <select name="price-range" id="price-range">
-        <option value="">Price</option>
+      <select onChange={(e)=>{setPrice(e.target.value)}} name="price-range" id="price-range">
+        <option value="0">Price</option>
         <option value="#" disabled></option>
-        <option value="low">₹0 to 4999</option>
+        <option value="4999">₹0 to 4999</option>
         <option value="#" disabled></option>
-        <option value="medium">₹5,000 to 9999</option>
+        <option value="9999">₹5,000 to 9999</option>
         <option value="#" disabled></option>
-        <option value="high">₹10,000 to 14999</option>
+        <option value="14999">₹10,000 to 14999</option>
         <option value="#" disabled></option>
-        <option value="critical">₹15,000 and above</option>
+        <option value="15000">₹15,000 and above</option>
       </select>
       <select name="material" id="material">
         <option value="">Material</option>
@@ -110,7 +109,9 @@ const ProductPage = () => {
         <option value="pentagon">Pentagon</option>
       </select>
     </div><div className="ui grid container">
-        <ProductComponent />
+        <ProductComponent sort = {sort} products = {products}
+        category = {category}
+        price = {price} />
 
         <h1>An efficient work setup in the comfort of your home</h1>
         <p >An organised workspace is just what you need to make working at home easier. To avoid distractions, use a room divider to separate your workspace from the rest of your home. Tuck away your files and papers in a standalone storage cabinet. Putting all your work papers away clears the desk for your children who want to use it for study or exam preparations.Putting all your work papers away clears the desk for your children who want to use it for study or exam preparations.</p>

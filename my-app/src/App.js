@@ -7,16 +7,28 @@ import React from 'react';
 import SingleProduct from './components/singleProduct page/singleProductpage';
 import Cart from './components/cart/cart'
 import ProductPage from './components/product page/ProductListing';
+import Signup from './components/login-signup/Signup'
+import Login from './components/login-signup/login'
+import {Routes,Route} from "react-router-dom"
+
 function App() {
   return (
     <div>
       <Navbar/>
+      <Routes >
+        <Route path='/' element = {<Homepage />} />
+        <Route path='/login' element = {<Login />} />
+        <Route path='/signup' element = {<Signup />} />
+        <Route path = '/products' element = {<ProductPage />} />
+        <Route path = "/products/:id" element = {<SingleProduct />} />
+      </Routes>
       {/* <SingleProduct /> */}
       {/* <Cart /> */}
       {/* <Homepage/> */}
-      {/* <Footer/> */}
+      <Footer/>
       {/* <ProductPage/> */}
-     
+     {/* <Signup /> */}
+     {/* <Login /> */}
       </div>
   );
 }

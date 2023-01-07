@@ -278,3 +278,20 @@
 }
 
 /* Filter tag ends */
+
+/* all products in grid format */
+
+.container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+.singleContainer{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px;
+  padding: 10px;
+  /* height: 50px; */
+  /* position: relative; */
+  /* color: rgb(93, 93, 93); */
+}

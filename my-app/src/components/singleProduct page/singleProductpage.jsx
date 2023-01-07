@@ -8,9 +8,10 @@ import {useDispatch} from "react-redux"
 import ProductAction from "./productAction";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
+import { useParams } from "react-router-dom";
 
 function SingleProduct() {
-
+    const {id} = useParams()
     const dispatch = useDispatch()
     const [obj,setObj] = useState({
         mainImageUrl : "",
@@ -21,7 +22,7 @@ function SingleProduct() {
         salesPrice: "",
     })
     const [loading,setLoading] = useState(true)
-    let id = "s69481394"
+    // let id = "60475019"
 
     useEffect(()=>{
         fetch(`https://ik.onrender.com/productWindow/${id}`)
@@ -50,9 +51,9 @@ function SingleProduct() {
     return (
         <>
         {loading?<Loading />:
-        <div className="parent">
+        <div className="Parent">
             <p style={{ color: "gray", fontSize: "14px" }}>Products {">"} Furniture {">"} {obj.typeName} {">"} {obj.imageAlt} </p>
-            <div className="container">
+            <div className="Container">
                 <div>
                     <div className="productImg">
                         <img src={obj.mainImageUrl} alt={obj.imageAlt} />

@@ -1,0 +1,75 @@
+/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> */
+.container{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    align-items: center;
+}
+Link{
+    font-weight: bolder;
+    color: #484848;
+}
+
+/* left Div */
+
+.leftDiv{
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    height:95vh;
+    width: 40%;
+    float: left;
+    background-color: #0058a3;
+    padding: 30px 90px;
+    color: white;
+    font-size: small;
+}
+
+.leftDiv h1 > span{
+    color: #fbd914;
+
+}
+
+/* right div */
+.rightDiv{
+    height: 100%;
+    width: 60%;
+    float: left;
+    padding: 50px 100px 50px 60px;
+    text-align: center;
+}
+
+/* right upper div */
+.preDiv:first-child{
+    text-align: left;
+}
+.preDiv > input{
+    text-align: left;
+    margin-top: 5px;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: #929292;
+    /* text-align: left; */
+}
+
+/* right bottom div */
+
+.rightDiv button {
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    padding: 25px;
+    border-radius: 35px;
+    border-color: #929292;
+}
+
+.pinInput {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    text-align: center;
+}

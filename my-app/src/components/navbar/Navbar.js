@@ -3,9 +3,13 @@ import "../navbar/header.css";
 
 import { useEffect,useState} from 'react'
 import axios from 'axios'
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Navbar() {
+
+  let navigate = useNavigate()
 
   const [data,setData] =useState([])
   useEffect(()=>{
@@ -110,6 +114,7 @@ export default function Navbar() {
 
         <div className="right-header">
           <button
+            
             class="btn"
             type="button"
             data-bs-toggle="offcanvas"
@@ -143,7 +148,7 @@ export default function Navbar() {
             <div class="offcanvas-body">
               <div id="loggin">
                 <h2>Hej</h2>
-                <button>Login</button>
+                <button data-bs-dismiss="offcanvas" onClick={() => navigate("/login")}>Login</button>
               </div>
               <hr />
               <div id="ikeaFamily">
@@ -164,7 +169,7 @@ export default function Navbar() {
       </header>
 
       <div id="category">
-        <li>Products</li>
+        <li onClick={()=> navigate('/products')}>Products</li>
         <li>Rooms</li>
         <li>New at IKEA</li>
         <li>Offers</li>

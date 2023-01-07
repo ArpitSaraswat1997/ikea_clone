@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 35px;
+}
+Link{
+    font-weight: bolder;
+    color: #484848;
+}
+/* Left Div */
+
+.leftDiv{
+    display: grid;
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+    width: 40%;
+    float: left;
+    padding:30px;
+    font-size: small;
+    height: max-content;
+}
+
+.leftDiv h1{
+    margin-bottom: -15px;
+}
+.leftImgDiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin-top: 100px;
+}
+.leftImgDiv > div:first-child{
+    display: grid;
+    gap: 5px;
+}
+.leftImgDiv > div:last-child {
+    display: grid;
+    margin-top: 160px;
+    gap:5px;
+    height: max-content;
+}
+
+/* Right Div */
+.rightDiv{
+    height: 100%;
+    width: 60%;
+    float: left;
+    padding:50px;
+}
+
+.rightDiv input[checkbox]{
+    size: 40px;
+}
+input[type=checkbox],
+input[type=radio]{
+    width: 25px;
+    height: 25px; 
+    margin-right: 10px; 
+}
+
+.rightDiv form select{
+    width: 70%;
+    height: 50px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.inputWrapper{
+    position: relative;
+	width: 100%;
+}
+.inputWrapper .inputFiled {
+    width: 100%;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #777;
+ 	box-shadow: none !important;
+}
+.inputWrapper .inputFiled:focus{
+    border-color: blue;
+	border-width: medium medium 2px;
+}
+.inputWrapper .floatingSpan{
+    position: absolute;
+	pointer-events: none;
+	top: 18px;
+	left: 10px;
+	transition: 0.2s ease all;
+}
+.inputWrapper input:focus ~ .floatingSpan,
+.inputWrapper input:not(:focus):valid ~ .floatingSpan{
+    top: 0px;
+	left: 10px;
+	font-size: 18px;
+	opacity: 1;
+}
+
+.rightDiv form button{
+    width: 80%;
+    background-color: #111111;
+    color: white;
+    height: 80px;
+    border-radius: 40px;
+    font-weight: bolder;
+}

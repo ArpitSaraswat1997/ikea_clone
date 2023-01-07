@@ -1,0 +1,79 @@
+/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> */
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+Link{
+    font-weight: bolder;
+    color: #484848;
+}
+
+/* left Div */
+
+.leftDiv{
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    /* height: 700px; */
+    width: 40%;
+    float: left;
+    background-color: #0058a3;
+    padding: 30px 90px;
+    color: white;
+    font-size: small;
+}
+
+.leftDiv h1 > span{
+    color: #fbd914;
+
+}
+
+/* right div */
+.rightDiv{
+    height: 100%;
+    width: 60%;
+    float: left;
+    padding: 50px 100px 50px 60px;
+}
+
+/* right upper div */
+
+.rightDiv form input {
+    margin-top: 5px;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: #929292;
+}
+
+.rightDiv form  button{
+    margin-top: 60px;
+    background-color: #0058a3;
+    color: white;
+    border: none;
+}
+.rightDiv form  button :hover{
+    color: darkblue;
+}
+
+
+/* right bottom div */
+
+.rightDiv h4 {
+    margin-top: 80px;
+    /* background-color: black; */
+}
+
+.rightDiv button {
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    padding: 25px;
+    border-radius: 35px;
+    border-color: #929292;
+}
