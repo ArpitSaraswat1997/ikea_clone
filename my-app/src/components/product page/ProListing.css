@@ -1,0 +1,280 @@
+/* 
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* .ui.cards{
+  border-radius: 78px;
+}  */
+
+.ui.cards > .card > .image {
+ 
+    background: #fff;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .ui.cards > .card > .image1 > img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+   
+  }
+  
+  /* .ui.cards > .card > .image2 > img {
+    
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    
+  } */
+  
+  
+  .ui.cards > .card > .content > .header {
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  .ui.cards > .card > .content > .description {
+    height: 36px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  .ui.cards > .card .meta.price {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .ui.cards > .card .meta.price > a {
+    font-size: 1.3rem;
+    color: #222;
+  }
+  
+  .ui.menu.fixed {
+    height: 60px;
+    padding-top: 15px;
+  }
+  
+  .ui.grid.container {
+    margin-top: 45px;
+  }
+  
+  .ui.grid > .row {
+    background: #fff;
+  }
+  .ui.grid > .row > .column.lp {
+    padding: 20px 40px 20px 20px;
+    align-self: flex-start !important;
+  }
+  .ui.grid > .row > .column.rp {
+    padding: 20px 20px 20px 40px;
+    text-align: left;
+    align-self: flex-start !important;
+  }
+  
+  .ui.grid > .row > .column > img,
+  .ui.grid > .row > img {
+    height: 100%;
+  }
+  .ui.placeholder .header:not(:first-child):before,
+  .ui.placeholder .image:not(:first-child):before,
+  .ui.placeholder .paragraph:not(:first-child):before {
+    display: none;
+  }
+  
+  .ui.label,
+  .ui.labels .label {
+    font-size: 22px;
+  }
+  
+  .column.rp h1 {
+    color: #333;
+  }
+  .column.rp p {
+    font-size: 18px;
+    color: #777;
+  }
+  .ui.placeholder.segment .column .button,
+  .ui.placeholder.segment .column .field,
+  .ui.placeholder.segment .column textarea,
+  .ui.placeholder.segment .column > .ui.input {
+    background-color: #ff3e6c;
+    border: 1px solid #ff3e6c;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 0;
+  }
+  
+  .two-img{
+    display:flex;
+    
+  }
+  
+  .first-img{
+    height:800px;
+  }
+  .second-img{
+    padding-left: 10px;
+    height:800px;
+  }
+  
+  .header2{
+     margin-left: -26px;
+  }
+  
+   .three-img{
+    display: flex;
+   }
+  
+   .three-one{
+    height:380px;
+    width:400px;
+    padding-right: 15px;
+   }
+  
+   p{
+    font-size:15px;
+   }
+  
+   
+  
+   .fourth-img{
+    /* background-color:red; */
+    height:480px;
+    width:1880px;
+    
+   }
+  
+/* All page margin would be zero at starting */
+*{
+    /* padding: 0px; */
+    margin: 0px;
+    /* border:0px; */
+}
+
+
+
+/* #filter-bar{
+    margin-left: 50px;
+} */
+
+/* Filter tag start */
+#price{
+    margin-top:10px;
+    width:145px;
+    height:40px;
+    background-color: rgb(231, 227, 227);
+    color:black;
+    padding-left: 11px;
+    border:2px;
+    border-radius: 20px;
+    margin-left: 190px;
+    justify-content: space-around;
+}
+
+
+#price:hover{
+    background-color:rgb(208, 204, 204);
+}
+
+#beds{
+    margin-top:10px;
+    width:120px;
+    height:40px;
+    background-color: rgb(231, 227, 227);
+    color:black;
+    padding-left: 11px;
+    border:2px;
+    border-radius: 20px;
+    margin-left:7px;
+   
+}
+#beds:hover{
+    background-color:rgb(208, 204, 204);
+}
+
+#price-range{
+    margin-top:10px;
+    width:145px;
+    height:40px;
+    background-color: rgb(231, 227, 227);
+    color:black;
+    padding-left: 11px;
+    border:2px;
+    border-radius: 20px;
+    margin-left:7px;
+}
+
+#price-range:hover{
+    background-color:rgb(208, 204, 204);
+}
+
+#material{
+    margin-top:10px;
+    width:95px;
+    height:40px;
+    background-color: rgb(231, 227, 227);
+    color:black;
+    padding-left: 11px;
+    border:2px;
+    border-radius: 20px;
+    margin-left:7px;
+}
+
+#material:hover{
+    background-color:rgb(208, 204, 204);
+}
+
+
+#size{
+    margin-top:10px;
+    width:95px;
+    height:40px;
+    background-color: rgb(231, 227, 227);
+    color:black;
+    padding-left: 11px;
+    border:2px;
+    border-radius: 20px;
+    margin-left:7px;
+   
+}
+#size:hover{
+    background-color:rgb(208, 204, 204);
+}
+
+#color{
+    margin-top:10px;
+    width:95px;
+    height:40px;
+    background-color: rgb(231, 227, 227);
+    color:black;
+    padding-left: 11px;
+    border:2px;
+    border-radius: 20px;
+    margin-left:7px;
+}
+#color:hover{
+    background-color:rgb(208, 204, 204);
+}
+
+#shape{
+    margin-top:10px;
+    width:95px;
+    height:40px;
+    background-color: rgb(231, 227, 227);
+    color:black;
+    padding-left: 11px;
+    border:2px;
+    border-radius: 20px;
+    margin-left:7px;
+   
+}
+#shape:hover{
+    background-color:rgb(208, 204, 204);
+}
+
+/* Filter tag ends */
