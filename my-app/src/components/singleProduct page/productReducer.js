@@ -17,7 +17,7 @@ function ProductRed(state = Initial_value, action){
     } 
     else if(action.type === 'update'){
         state = action.payload
-        // localStorage.setItem("cartItem",JSON.stringify(state))
+        localStorage.setItem("cartItem",JSON.stringify(state))
     }
     
     return state

@@ -8,6 +8,10 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import UpdateArray from "./updataQuantity";
 import EmptyCart from "./emptyCart";
+import {TbTruckDelivery} from "react-icons/tb"
+import {MdOutlineAdsClick} from "react-icons/md"
+import {GrDeliver} from "react-icons/gr"
+
 
 function Cart() {
 
@@ -80,6 +84,37 @@ function Cart() {
 
             </div>
             }
+            <div className="placeOrder">
+                <div className="greenColor">
+                    <div style={{display:"flex",gap:"25px"}}>
+                        <span style={{fontSize:"24px"}}><TbTruckDelivery /> </span>
+                        <h5 style={{fontWeight:"bolder"}}>   Delivery details will be 
+                        calculated in the
+                        next page, 
+                        please enter the pincode below to continue.</h5>
+                    </div>
+                    
+                </div>
+                <h3 style={{textAlign:"center",fontWeight:"bolder",marginTop:"30px"}}>How would you like to receive your order?</h3>
+                <div style={{display:"flex",justifyContent:"space-around",borderBottom:"1px solid black"}}>
+                    <div>
+                        <p style={{fontSize:"40px",marginLeft:"25px"}}><GrDeliver /></p>
+                        <p style={{color:"blue"}}>Home Delivery</p>
+                    </div>
+                    <div>
+                        <p style={{fontSize:"40px",marginLeft:"35px"}}><MdOutlineAdsClick /></p>
+                        <p>Click and Colloec</p>
+                    </div>
+                </div>
+                <div style={{borderTop:"1px solid black",marginTop:"20px"}}>
+                    <p>
+                        Enter a PIN code to see product availability and delivery options.
+                    </p>
+                    <input style={{width:"100%",padding:"5px 0",fontSize:"25px"}} type="text" ></input><br></br>
+                    <button style={{marginTop:"10px",backgroundColor:"rgb(35, 71, 179)",width:"40%",color:"white",
+                             padding:"15px",fontSize:"16px",border:"none"  }}>Proceed</button>
+                </div>
+            </div>
             
         </div>
     )

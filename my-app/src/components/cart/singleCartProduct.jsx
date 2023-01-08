@@ -18,13 +18,14 @@ function CartProduct({del, price, name, detail, measurement, image, quantity,set
                             <img width="135px" src={image} alt={measurement} />
                         </div>
                         <div>
-                            <h5>{name}</h5>
+                            <h5 style={{fontWeight:"bolder"}}>{name}</h5>
                             <p className="textSize">{detail}</p>
                             <p className="textSize">{measurement}</p> 
                         </div>
                     </div>
-                    <div>
-                        <h5>Rs.{price * quantity}</h5>
+                    <div style={{textAlign:"center"}}>
+                        <h5 style={{fontWeight:"bolder"}}>Rs.{price * quantity}</h5>
+                        <p>{quantity>1?"Rs"+price+"/pieces":null}</p>
                     </div>
                 </div>
                 <div className="input-btn">
