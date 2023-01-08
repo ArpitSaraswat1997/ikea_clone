@@ -1,7 +1,9 @@
 import React from 'react'
 import "../landing page/homepage.css"
+import {useNavigate} from "react-router-dom"
 
 export default function Homepage() {
+    let navigate = useNavigate()
   return (
     <div>
 
@@ -10,7 +12,7 @@ export default function Homepage() {
         <div class="img-gallery-1">
             <h1>Let your home flourish again</h1>
             <div class="gallrey-items">
-                <a href="itempage.html"><img src="https://www.ikea.com/images/bf/7e/bf7eb49d22f780e94fb45a5391861ad7.png?f=xl" alt=""/></a>
+                <a onClick={()=>{navigate("/products")}}><img src="https://www.ikea.com/images/bf/7e/bf7eb49d22f780e94fb45a5391861ad7.png?f=xl" alt=""/></a>
                 <a href=""><img src="https://www.ikea.com/ext/ingkadam/m/4afe862651bc5b44/original/PH172865-crop001.jpg" alt=""/></a>
                 <a href=""><img src="https://www.ikea.com/ext/ingkadam/m/4287d1a1f82bb719/original/PH178358-crop001.jpg?f=xs" alt="" /></a>
             </div>

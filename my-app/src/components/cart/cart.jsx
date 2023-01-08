@@ -11,10 +11,13 @@ import EmptyCart from "./emptyCart";
 import {TbTruckDelivery} from "react-icons/tb"
 import {MdOutlineAdsClick} from "react-icons/md"
 import {GrDeliver} from "react-icons/gr"
+import { useNavigate } from "react-router-dom";
+
 
 
 function Cart() {
-
+    let [input,setInput] = useState("")
+    let navigate = useNavigate()
     const dispatch = useDispatch()
     const[q,setq] = useState(1)
     const cartArray = useSelector((data)=>{
@@ -110,8 +113,15 @@ function Cart() {
                     <p>
                         Enter a PIN code to see product availability and delivery options.
                     </p>
-                    <input style={{width:"100%",padding:"5px 0",fontSize:"25px"}} type="text" ></input><br></br>
-                    <button style={{marginTop:"10px",backgroundColor:"rgb(35, 71, 179)",width:"40%",color:"white",
+                    <input value={input} onChange={(e)=>setInput(e.target.value)} style={{width:"100%",padding:"5px 0",fontSize:"25px"}} type="text" ></input><br></br>
+                    <button onClick={()=>{
+                        if(input.length==6) navigate("/checkout")
+                        else{
+                            alert("please enter a valid pincode")
+                            setInput("")
+                        }
+                        
+                    }} style={{marginTop:"10px",backgroundColor:"rgb(35, 71, 179)",width:"40%",color:"white",
                              padding:"15px",fontSize:"16px",border:"none"  }}>Proceed</button>
                 </div>
             </div>

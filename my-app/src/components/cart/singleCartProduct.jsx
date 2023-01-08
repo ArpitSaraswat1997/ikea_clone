@@ -30,7 +30,7 @@ function CartProduct({del, price, name, detail, measurement, image, quantity,set
                 </div>
                 <div className="input-btn">
                     <button onClick={()=>del(id)}><RiDeleteBin6Line/></button>
-                    <select onChange={(e)=>{setq(e.target.value,id)}} >
+                    <select value={quantity} onChange={(e)=>{setq(e.target.value,id)}} >
                         {
                             arr.map((elem, i) => {
                                 return (
