@@ -1,23 +1,23 @@
-.Parent{
+.Parent1{
     /* width: 50%; */
     /* border:1px solid black */
 }
-.Parent>p{
+.Parent1>p{
     margin-left: 10%;
 }
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.productImg{
+.productImg1{
     display: flex;
     width: 100%;
 }
-.productImg>img{
+.productImg1>img{
     width: 380px;
     height: 380px;
 }
-.Container{
+.Container1{
     width: 85%;
     margin: auto;
     gap: 50px;
@@ -25,7 +25,7 @@
     display: grid;
     grid-template-columns: 5fr 3fr;
 }
-.checkin{
+.checkin1{
     border: 1px solid rgb(222, 221, 221);
     height: 50px;
     /* color: rgb(109, 106, 106); */
@@ -36,21 +36,21 @@
     align-items: center;
     padding-top: 10px;
 }
-.pinCheck{
+.pinCheck1{
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin-top: 20px;
     margin-left: -8px;
 }
-.pinCheck>input{
+.pinCheck1>input{
     border: none;
     width: 65%;
     border-bottom: 2px solid black;
     font-size: 17px;
     outline: none;
 }
-.pinCheck>button{
+.pinCheck1>button{
     border: none;
     border-radius: 17px;
     background-color: black;
@@ -58,19 +58,19 @@
     padding: 8px 15px;
     cursor: pointer;
 }
-.pinCheck>button:hover{
+.pinCheck1>button:hover{
     background-color: rgb(40, 40, 40);
 }
-.delivey{
+.delivey1{
     display: flex;
     gap: 20px;
     align-items:center;
 }
-.abc{
+.abc1{
     display: flex;
     align-items: center;
 }
-.addToCart{
+.addToCart1{
     width: 100%;
     margin: auto;
     padding: 13px;
@@ -82,23 +82,23 @@
     border-radius: 28px;
     cursor: pointer;
 }
-.addToCart:hover{
+.addToCart1:hover{
     background-color: rgb(19, 80, 116);
 }
 .siderRight{
     height: 220px;
     background-color: rgb(3, 80, 152)
 }
-.sidebarText{
+.sidebarText1{
     color: white;
     margin-left: 15%;
     font-weight: bolder;
 }
-.sidebarText>a{
+.sidebarText1>a{
     color: white;
 }
 
-.about{
+.about1{
     margin-top: 50px;
     font-size: 22px;
     color: rgb(77, 76, 76);

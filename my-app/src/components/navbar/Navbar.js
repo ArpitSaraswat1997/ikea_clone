@@ -55,6 +55,7 @@ export default function Navbar() {
               </h5>
 
               <button
+              
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="offcanvas"
@@ -162,7 +163,9 @@ export default function Navbar() {
             {" "}
             <span class="material-symbols-outlined">local_shipping</span>
           </li>
-          <li className="cart-icon">
+          <li onClick={()=>{
+                navigate("/cart")
+              }} className="cart-icon">
             <span class="material-symbols-outlined">shopping_basket</span>
           </li>
         </div>
