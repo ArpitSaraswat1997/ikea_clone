@@ -42,7 +42,7 @@ function ProductComponent({sort,products,category,price}){
       else if(sort === 'htl') return b.salesPrice.numeral- a.salesPrice.numeral
     })
   }
-
+  // localStorage.setItem("path","/")
   return (
     <div className="container">
         {

@@ -4,6 +4,7 @@ import {useNavigate} from "react-router-dom"
 
 export default function Homepage() {
     let navigate = useNavigate()
+    localStorage.setItem("path","/")
   return (
     <div>
 

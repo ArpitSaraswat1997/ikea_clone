@@ -24,6 +24,7 @@ const ProductPage = () => {
         console.log("Err: ", err);
       });
   };
+  localStorage.setItem("path","/products")
 //  console.log(sort)
   useEffect(() => {
     fetchProducts();

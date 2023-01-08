@@ -1,25 +1,53 @@
 import React from "react";
 import "../navbar/header.css";
 
-import { useEffect,useState} from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import AuthReducer from "../login-signup/AuthReducer/AuthReducer";
+import { logout } from "../login-signup/AuthReducer/Actions";
+import { useDispatch } from "react-redux";
+
 
 
 export default function Navbar() {
-
-  let navigate = useNavigate()
+  const dispatch = useDispatch()
+  const isAuth = useSelector((data)=>{
+    return data.AuthReducer
+  })
+  console.log(isAuth.isAuth)
+  const navigate = useNavigate()
+  const [filteredData, setFilteredData] = useState([]);
+  const [word, searchWord] = useState()
 
   const [data,setData] =useState([])
-  useEffect(()=>{
-      axios.get("https://ik.onrender.com/productWindow")
-      .then((res)=>{
-          console.log(res)
-          setData(res.data)
+
+  useEffect(() => {
+    axios.get("https://ik.onrender.com/productWindow")
+      .then((res) => {
+        console.log(res)
+        setFilteredData(res.data)
       })
-  
-  },[])
+
+  }, [])
+
+  const handleFilter = (event) => {
+    searchWord(event.target.value)
+    console.log(word)
+
+  }
+  let filteredItems = filteredData.filter((item) => item.typeName
+    .includes(word));
+
+
+  console.log(filteredItems);
+
+  let slicedArr = filteredItems.slice(2, 8);
+
+
   return (
     <div>
       <header id="main-header">
@@ -48,14 +76,15 @@ export default function Navbar() {
                 id="offcanvasWithBothOptionsLabel"
                 style={{ display: "flex", margin: "auto" }}
               >
-                <img
+                <img 
+                style={{cursor:"pointer"}}
+                  onClick={()=>{navigate("/")}}
                   src="https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg"
                   alt=""
                 />
               </h5>
 
               <button
-              
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="offcanvas"
@@ -68,10 +97,10 @@ export default function Navbar() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                margin: "auto",
+
                 marginTop: "10px",
-                width:"100%" ,
-               paddingLeft:"50px"
+
+                paddingLeft: "50px"
               }}
             >
               <h2>Products</h2>
@@ -97,25 +126,47 @@ export default function Navbar() {
           <p>Menu</p>
         </div>
 
-        <img
-          src="https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg"
-          alt=""
-        />
-        <div className="header__search">
-          <input
-            type="text"
-            className="header__searchInput"
-            placeholder="What are you looking for?"
+        <div className="image_logo">
+
+          <img
+            onClick={()=>{navigate("/")}}
+            src="https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg"
+            alt=""
           />
-          
-          {/* <SearchIcon className="header__searchIcon" /> */}
-          <span id="header__searchIcon" class="material-symbols-outlined">search</span>
         </div>
-        
+        <div className="header__search">
+          <div className="header2">
+
+            <input
+            value=""
+              type="text" className="header__searchInput"
+              placeholder="What are you looking for?"
+              onChange={handleFilter} />
+
+            {/* <SearchIcon className="header__searchIcon" /> */}
+            <span id="header__searchIcon" class="material-symbols-outlined">search</span>
+
+            <div className="final-Data">
+              {
+
+                word === "" ? <div></div> :
+                  slicedArr.map((items) => (
+
+
+                    <li className="details" onClick={() => {
+                      navigate(`products/${items.id}`)
+                    }}>{items.mainImageAlt}</li>
+
+                  ))
+              }
+            </div>
+          </div>
+        </div>
+
 
         <div className="right-header">
           <button
-            
+
             class="btn"
             type="button"
             data-bs-toggle="offcanvas"
@@ -124,8 +175,7 @@ export default function Navbar() {
           >
             {" "}
             <li className="login-icon">
-              <span class="material-symbols-outlined"> person</span> Hej! Log in
-              or sign up
+              <span class="material-symbols-outlined"> person</span> <span className="hej">{isAuth.isAuth?isAuth.signup.firstName.toUpperCase():"Hej! Log in or sign up"}</span>
             </li>
           </button>
 
@@ -149,7 +199,9 @@ export default function Navbar() {
             <div class="offcanvas-body">
               <div id="loggin">
                 <h2>Hej</h2>
-                <button data-bs-dismiss="offcanvas" onClick={() => navigate("/login")}>Login</button>
+                <button data-bs-dismiss="offcanvas" onClick={() => {
+                  !isAuth.isAuth?navigate("/login"):dispatch(logout())
+                }}>{!isAuth.isAuth?"Login":"Logout"}</button>
               </div>
               <hr />
               <div id="ikeaFamily">
@@ -163,22 +215,24 @@ export default function Navbar() {
             {" "}
             <span class="material-symbols-outlined">local_shipping</span>
           </li>
-          <li onClick={()=>{
-                navigate("/cart")
-              }} className="cart-icon">
+          <li onClick={() => {
+            navigate("/cart")
+          }} className="cart-icon">
             <span class="material-symbols-outlined">shopping_basket</span>
           </li>
         </div>
       </header>
 
+      <br />
       <div id="category">
-        <li onClick={()=> navigate('/products')}>Products</li>
+        <li onClick={() => {
+
+          navigate('/products')
+        }}>Products</li>
         <li>Rooms</li>
         <li>New at IKEA</li>
         <li>Offers</li>
       </div>
-
-   
     </div>
   );
 }

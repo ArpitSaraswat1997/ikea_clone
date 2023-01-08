@@ -14,9 +14,6 @@ function ProductAction(value){
                 payload: value
             })
         }
-        else{
-            alert("Item already added to the cart")
-        }
     }
 }
 

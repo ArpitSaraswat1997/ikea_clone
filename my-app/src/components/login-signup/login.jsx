@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import styles from "./Login.module.css";
 import { useDispatch } from "react-redux";
 import { LoginThunkActionCreator } from "./AuthReducer/Actions";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function Login(props) {
+  let navigate = useNavigate()
+  let isAuth = useSelector((data)=>{
+    console.log(data.AuthReducer.isAuth)
+    return data.AuthReducer.isAuth
+  })
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -20,9 +27,14 @@ function Login(props) {
     e.preventDefault();
     console.log("inLoginFIleInput", input);
     dispatch(LoginThunkActionCreator(input));
+    // if(isAuth){
+    //   navigate("/")
+    // }
+    // else alert("Invalid credentials")
   };
   //◀
   return (
+    <>{isAuth?<Navigate to={`${localStorage.getItem("path")}`} />:
     <div className={styles.container}>
       <div className={styles.leftDiv}>
         <div>
@@ -106,6 +118,8 @@ function Login(props) {
         </div>
       </div>
     </div>
+}
+    </>
   );
 }
 

@@ -1,14 +1,15 @@
 import "./cart.css"
 
 import { RiDeleteBin6Line } from 'react-icons/ri';
-
+import { useSelector } from "react-redux";
+import AuthReducer from "../login-signup/AuthReducer/AuthReducer";
 
 function CartProduct({del, price, name, detail, measurement, image, quantity,setq,id }) {
+    
     let arr = []
     for (var i = 0; i < 100; i++) {
         arr.push(i);
     }
-
     return (
         <>
             <div className="Container">
@@ -25,7 +26,7 @@ function CartProduct({del, price, name, detail, measurement, image, quantity,set
                     </div>
                     <div style={{textAlign:"center"}}>
                         <h5 style={{fontWeight:"bolder"}}>Rs.{price * quantity}</h5>
-                        <p>{quantity>1?"Rs"+price+"/pieces":null}</p>
+                        <p>{quantity>1?"Rs."+price+"/pieces":null}</p>
                     </div>
                 </div>
                 <div className="input-btn">

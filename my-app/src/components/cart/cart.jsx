@@ -14,8 +14,13 @@ import {GrDeliver} from "react-icons/gr"
 import { useNavigate } from "react-router-dom";
 
 
-
 function Cart() {
+    const isAuth = useSelector((data)=>{
+        
+        return data.AuthReducer.isAuth
+    })
+    localStorage.setItem("path","/cart")
+    console.log(isAuth)
     let [input,setInput] = useState("")
     let navigate = useNavigate()
     const dispatch = useDispatch()
@@ -53,6 +58,8 @@ function Cart() {
     let totalPrice = 0;
     console.log(cartArray)
     return (
+        <>
+        {!isAuth?<EmptyCart/>:
         <div>
             <h3 style={{ textAlign: "center"}}> <span style={{textDecoration:"underline"}}>Shopping Cart</span>   <BsChevronDown /> <FiPrinter />  </h3>
             <div>
@@ -127,6 +134,8 @@ function Cart() {
             </div>
             
         </div>
+        }
+        </>
     )
 }
 

@@ -1,13 +1,15 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Signup.module.css";
 import { useDispatch } from "react-redux";
 import { SignupThunkActionCreator } from "./AuthReducer/Actions";
+import { useNavigationType } from "react-router-dom";
 
 function Signup(props) {
   const [accountType, setAccountType] = useState({
     type: "familyAccount",
   });
+  let navigate = useNavigate()
   const [input, setInput] = useState({
     firstName: "",
     surname: "",
@@ -39,6 +41,7 @@ function Signup(props) {
     e.preventDefault();
     console.log(input);
     dispatch(SignupThunkActionCreator(input));
+    navigate("/login")
   };
   // useEffect(()=>{
 
@@ -56,10 +59,10 @@ function Signup(props) {
             )}{" "}
             Profile
           </h1>
-          <p>
-            Already have an account? 
+          <p style={{marginTop:"15px"}}>
+            Already have an account? <Link to="/login">Login</Link>
           </p>
-          <Link to="/login">Login</Link>
+          
         </div>
         <div className={styles.leftImgDiv}>
           <div>
@@ -309,7 +312,7 @@ function Signup(props) {
             <br />
             <br />
             <br />
-            <button type="submit">Create Profile</button>
+            <button  type="submit">Create Profile</button>
           </form>
         </div>
       </div>

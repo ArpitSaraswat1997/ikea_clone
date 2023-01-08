@@ -6,6 +6,7 @@ import {
   SignupSuccessful,
   SignupFailed,
 } from "./ActionsTypes";
+import { useNavigate } from "react-router-dom";
 
 // export const LoginAction = (info, dispatch) => {
 //   console.log("inLoginActionInput", info);
@@ -34,7 +35,9 @@ import {
 //     type: SignupFailed,
 //   });
 // };
+
 export const LoginThunkActionCreator = (info) => {
+  
   return function LoginThunkAction(dispatch, getState) {
     dispatch({
       type: LoginRequest,
@@ -44,11 +47,13 @@ export const LoginThunkActionCreator = (info) => {
         getState().AuthReducer.signup.email === info.email) &&
       getState().AuthReducer.signup.password === info.password
     ) {
+
       dispatch({
         type: LoginSuccessful,
         payload: info,
       });
     } else {
+      alert("invalid credentials")
       dispatch({
         type: LoginFailed,
       });
@@ -64,7 +69,7 @@ export const SignupThunkActionCreator = (info) => {
     });
     if (
       getState().AuthReducer.signup.mobile === "" ||
-      getState.AuthReducer.signup.email === ""
+      getState().AuthReducer.signup.email === ""
     ) {
       dispatch({
         type: SignupSuccessful,
@@ -77,3 +82,9 @@ export const SignupThunkActionCreator = (info) => {
     }
   };
 };
+
+export const logout = ()=>{
+  return function abc(dispatch,getState){
+    dispatch({type:"logout"})
+  }
+}

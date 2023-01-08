@@ -89,6 +89,9 @@
     height: 220px;
     background-color: rgb(3, 80, 152)
 }
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .sidebarText1{
     color: white;
     margin-left: 15%;

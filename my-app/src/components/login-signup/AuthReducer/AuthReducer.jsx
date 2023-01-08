@@ -13,7 +13,7 @@ const info = {
     email: "",
     password: "",
   },
-  signup: {
+  signup: JSON.parse(localStorage.getItem("userData")) || {
     firstName: "",
     surname: "",
     mobile: "",
@@ -27,8 +27,8 @@ const info = {
     contactOnSms: "OK",
     contactOnDirectMail: "OK",
     terms: "",
-  },
-  isLoading: false,
+  }  ,
+  isAuth: false,
   isError: false,
 };
 const AuthReducer = (state = info, action) => {
@@ -36,13 +36,13 @@ const AuthReducer = (state = info, action) => {
     case SignupRequest:
       state = {
         ...state,
-        isLoading: true,
+        // isAuth: true,
       };
       break;
     case SignupSuccessful:
       state = {
         ...state,
-        isLoading: false,
+        // isAuth: false,
         isError: false,
         signup: {
           firstName: action.payload.firstName,
@@ -60,24 +60,26 @@ const AuthReducer = (state = info, action) => {
           terms: action.payload.terms,
         },
       };
+      localStorage.setItem("userData",JSON.stringify(state.signup))
       break;
     case SignupFailed:
       state = {
         ...state,
-        isLoading: false,
+        // isAuth: false,
         isError: true,
       };
       break;
     case LoginRequest:
       state = {
         ...state,
-        isLoading: true,
+        // isAuth: true,
         isError: false,
       };
       break;
     case LoginSuccessful:
       state = {
         ...state,
+        isAuth: true,
         login: {
           mobile: action.payload.mobile || "",
           email: action.payload.email || "",
@@ -88,10 +90,15 @@ const AuthReducer = (state = info, action) => {
     case LoginFailed:
       state = {
         ...state,
-        isLoading: false,
+        isAuth: false,
         isError: true,
       };
       break;
+    case "logout":
+      state = {
+        ...state,
+        isAuth: false,
+      }
     
   }
   return state;
