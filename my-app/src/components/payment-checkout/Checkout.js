@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./checkout.css"
 import { useSelector } from "react-redux";
 export default function Checkout() {
+  let navigate = useNavigate()
   let data = useSelector((arr)=>{
     console.log(arr.singlePR)
     return arr.singlePR
@@ -195,7 +197,7 @@ useEffect(()=>{
                 </p>
               </div>
               <div class="plcorder">
-                <button onclick="window.location.href='pay.html'" id="plcbtn">
+                <button onClick={()=>{navigate("/checkout3")}} id="plcbtn">
                   Place Order
                 </button>
               </div>

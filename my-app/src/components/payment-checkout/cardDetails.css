@@ -1,31 +1,31 @@
-#head2 {
+#head2q {
     /* border: solid red; */
     padding: 2px;
     display: flex;
   }
   
-  #logo {
+  #logoq {
     margin-left: 3.5%;
   }
-  #tick {
+  #tickq {
     margin-left: 19%;
   }
-  #ticks {
+  #tickq {
     margin-left: 6.5%;
     margin-top: 1%;
   }
-  #tickss {
+  #tickssq {
     margin-left: 6%;
   }
   
-  #p1 {
+  #p1q {
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2.5%;
     margin-top: 1.5%;
     letter-spacing: 1px;
   }
-  #p2 {
+  #p2q {
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2.5%;
@@ -33,7 +33,7 @@
     letter-spacing: 1px;
   }
   
-  #a1 {
+  #a1q {
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2.5%;
@@ -43,47 +43,47 @@
     letter-spacing: 1px;
   }
   
-  #p3 {
+  #p3q {
     /* border: red solid; */
     margin-left: 5%;
     width: 40%;
     margin-top: -0.5%;
   }
   
-  #med {
+  #medq {
     display: flex;
   }
   
-  #head2ing {
+  #head2ingq {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     margin-left: 17%;
   }
-  #p4 {
+  #p4q {
     margin-left: 17.5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin-top: -3.5%;
   }
-  #pic {
+  #picq {
     margin-left: 23%;
     /* border: red solid; */
     margin-top: -0.7%;
   }
   
-  #H3 {
+  #H3q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 12.5%;
     letter-spacing: 1px;
   }
   
-  #main {
+  #mainq {
     /* border: solid red; */
     display: flex;
     margin-left: 12.5%;
   }
   
-  #cardDeatils {
+  #cardDeatilsq {
     /* border: solid red; */
     display: flex;
     width: 120%;
@@ -93,42 +93,42 @@
     cursor: pointer;
     /* margin-left: 3%; */
   }
-  #icon {
+  #iconq {
     /* border: solid red; */
     margin-left: 2%;
     margin-top: 8%;
     margin-left: 10%;
   }
-  #cardsDetails {
+  #cardsDetailsq {
     /* border: solid red; */
     margin-left: 8%;
     width: 32%;
     padding: 5px;
   }
   
-  #cr {
+  #crq {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16.5px;
     font-weight: 60px;
   }
-  #dr {
+  #drq {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: -5%;
   }
-  #cardP {
+  #cardPq {
     /* border: red solid; */
     width: 90%;
     margin-left: 4%;
   }
-  #img2 {
+  #img2q {
     width: 3%;
     height: 5%;
     margin-left: 5%;
     margin-top: 7%;
   }
-  #cardss {
+  #cardssq {
     /* border: 2px soild red; */
     display: flex;
     width: 120%;
@@ -136,32 +136,32 @@
     cursor: pointer;
   }
   
-  #icon1 {
+  #icon1q {
     /* border: solid red; */
     margin-left: 2%;
     margin-top: 10%;
     margin-left: 6%;
   }
-  #cr1 {
+  #cr1q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16.5px;
     font-weight: 60px;
     margin-top: 10%;
   }
-  #dr1 {
+  #dr1q {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: -4%;
   }
   
-  #cardP1 {
+  #cardP1q {
     /* border: red solid; */
     width: 90%;
     margin-left: 3%;
   }
   
-  #cardss1 {
+  #cardss1q {
     /* border: 2px soild red; */
     display: flex;
     width: 120%;
@@ -169,31 +169,31 @@
     cursor: pointer;
   }
   
-  #icon2 {
+  #icon2q {
     /* border: solid red; */
     margin-left: 7%;
     margin-top: 10.5%;
   }
-  #cr2 {
+  #cr2q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16.5px;
     font-weight: 60px;
     margin-top: 10%;
   }
-  #dr2 {
+  #dr2q {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: -4%;
   }
   
-  #cardP2 {
+  #cardP2q {
     /* border: red solid; */
     width: 90%;
     margin-left: 5%;
   }
   
-  #cardss2 {
+  #cardss2q {
     /* border: 2px soild red; */
     display: flex;
     width: 120%;
@@ -201,31 +201,31 @@
     cursor: pointer;
   }
   
-  #icon3 {
+  #icon3q {
     /* border: solid red; */
     margin-left: 7%;
     margin-top: 11%;
   }
-  #cr3 {
+  #cr3q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16.5px;
     font-weight: 60px;
     margin-top: 10%;
   }
-  #dr3 {
+  #dr3q {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: -4%;
   }
   
-  #cardP3 {
+  #cardP3q {
     /* border: red solid; */
     width: 90%;
     margin-left: 3%;
   }
   
-  #cardss3 {
+  #cardss3q {
     /* border: 2px soild red; */
     display: flex;
     width: 120%;
@@ -233,31 +233,31 @@
     cursor: pointer;
   }
   
-  #icon4 {
+  #icon4q {
     /* border: solid red; */
     margin-left: 7%;
     margin-top: 10%;
   }
-  #cr4 {
+  #cr4q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16.5px;
     font-weight: 60px;
     margin-top: 10%;
   }
-  #dr4 {
+  #dr4q {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: -4%;
   }
   
-  #cardP4 {
+  #cardP4q {
     /* border: red solid; */
     width: 90%;
     margin-left: 3%;
   }
   
-  #cardss4 {
+  #cardss4q {
     /* border: 2px soild red; */
     display: flex;
     width: 120%;
@@ -265,31 +265,31 @@
     cursor: pointer;
   }
   
-  #icon5 {
+  #icon5q {
     /* border: solid red; */
     margin-left: 7%;
     margin-top: 10%;
   }
-  #cr5 {
+  #cr5q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16.5px;
     font-weight: 60px;
     margin-top: 10%;
   }
-  #dr5 {
+  #dr5q {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: -4%;
   }
   
-  #cardP5 {
+  #cardP5q {
     /* border: red solid; */
     width: 90%;
     margin-left: 3%;
   }
   
-  #cardss5 {
+  #cardss5q {
     /* border: 2px soild red; */
     display: flex;
     width: 120%;
@@ -297,62 +297,62 @@
     cursor: pointer;
   }
   
-  #icon6 {
+  #icon6q {
     /* border: solid red; */
     margin-left: 7%;
     margin-top: 10%;
   }
-  #cr6 {
+  #cr6q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16.5px;
     font-weight: 60px;
     margin-top: 10%;
   }
-  #dr6 {
+  #dr6q {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: -4%;
   }
   
-  #cardP6 {
+  #cardP6q {
     /* border: red solid; */
     width: 90%;
     margin-left: 3%;
     margin-bottom: 5%;
   }
-  #head22 {
+  #head22q {
     letter-spacing: 1px;
     margin-top: 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 3%;
   }
-  #line {
+  #lineq {
     margin-top: -1.5%;
   
     border: 1px solid #cccccc;
   }
-  #logos {
+  #logosq {
     display: flex;
   }
-  #p5 {
+  #p5q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
     letter-spacing: 1px;
     margin-top: 1%;
   }
-  #img3 {
+  #img3q {
     box-sizing: border-box;
     width: 50%;
     height: 20%;
     margin-left: 1%;
   }
-  #form {
+  #formq {
     /* border: red solid; */
     margin-top: 2%;
     padding: 1px;
   }
-  #cardNumber {
+  #cardNumberq {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -367,7 +367,7 @@
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
   
-  #expiry {
+  #expiryq {
     padding: 15px;
     width: 39.2%;
     font-size: 17px;
@@ -379,7 +379,7 @@
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
   
-  #cvv {
+  #cvvq {
     padding: 15px;
     width: 39.2%;
     font-size: 17px;
@@ -392,7 +392,7 @@
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
   
-  #checked {
+  #checkedq {
     display: flex;
   }
   input[type="checkbox"] {
@@ -402,17 +402,17 @@
     border-radius: 10px;
     cursor: pointer;
   }
-  #check {
+  #checkq {
     margin-top: 3%;
   }
-  #p6 {
+  #p6q {
     margin-top: 3.5%;
     margin-left: 2%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     letter-spacing: 0.5px;
   }
-  #submit {
+  #submitq {
     width: 100%;
     /* padding: 15px; */
     font-family: Arial, Helvetica, sans-serif;
@@ -428,26 +428,26 @@
 
   }
   
-  #cardssss {
+  #cardssssq {
     /* border: solid red; */
     width: 122.5%;
     background-color: #f2eff7;
   }
   
-  #bagDetails {
+  #bagDetailsq {
     /* border: solid red; */
     margin-left: 3%;
     width: 28%;
     margin-top: -2.3%;
   }
-  #bag {
+  #bagq {
     display: flex;
     padding: 3px;
     border: 1px solid #ccc;
     border-radius: 10px 10px 0px 0px;
     /* border: solid red; */
   }
-  #p7 {
+  #p7q {
     margin-left: 58%;
     margin-top: 6%;
     font-family: Arial, Helvetica, sans-serif;
@@ -459,11 +459,11 @@
     font-size: 16px;
     margin-bottom: -5%;
   }
-  #aero {
+  #aeroq {
     margin-left: 5%;
   }
   
-  #bag1 {
+  #bag1q {
     display: flex;
     padding: 3px;
     margin-top: -0.5%;
@@ -471,24 +471,24 @@
     border-bottom-color: white;
     /* border: solid red; */
   }
-  #aeross {
+  #aerossq {
     margin-left: 5%;
     margin-top: -2%;
   }
   
-  #p8 {
+  #p8q {
     margin-left: 8%;
     margin-top: 7%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
   }
-  #H5 {
+  #H5q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 5%;
     font-size: 16px;
   }
   
-  #bag2 {
+  #bag2q {
     display: flex;
     padding: 3px;
     border: 1px solid #ccc;
@@ -497,18 +497,18 @@
     border-radius: 0px 0px 10px 10px;
     /* border: solid red; */
   }
-  #aeros {
+  #aerosq {
     margin-left: 5%;
     margin-top: -8%;
   }
   
-  #p9 {
+  #p9q {
     margin-left: 34%;
     margin-top: 6.5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
   }
-  #H6 {
+  #H6q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 5%;
     font-size: 16px;
@@ -521,12 +521,12 @@
     background-color: #f2eff7;
   }
   
-  #lock {
+  #lockq {
     height: 5%;
     margin-left: 10%;
   }
   
-  #p10 {
+  #p10q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     margin-bottom: 1%;
@@ -536,7 +536,7 @@
   
   /* ------------------------------------------------------------------------------------- */
   
-  #fetchAddress {
+  #fetchAddressq {
     /* border: red solid; */
     /* margin-left: 2%; */
     width: 100%;
@@ -548,36 +548,36 @@
     padding-right: 2%;
   }
   
-  #i1 {
+  #i1q {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
   }
-  #i2 {
+  #i2q {
     margin-top: -2%;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  #i3 {
+  #i3q {
     margin-top: -3%;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
   }
   
-  #i4 {
+  #i4q {
     margin-top: -3%;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
   }
-  #i5 {
+  #i5q {
     margin-top: -3%;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
   }
   
-  .sub-menu {
+  .sub-menuq {
     padding: 17px;
   }
-  .sub-menu-wrap {
+  .sub-menu-wrapq {
     /* border: red solid; */
     /* border-radius: 0 0 10PX 10PX; */
     width: 97%;
@@ -590,25 +590,25 @@
       rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   }
   
-  .sub-menu-wrap.open-menu {
+  .sub-menu-wrap.open-menuq {
     max-height: 400px;
   }
   /* --------------------------------------------------------------------------------------- */
   /* --------------------------------------------------------------------------------------------------- */
   
-  .totalamnt {
+  .totalamntq {
     display: flex;
   }
   
-  .shipping {
+  .shippingq {
     display: flex;
   }
   
-  .pay {
+  .payq {
     display: flex;
   }
   
-  #p2p {
+  #p2pq {
     margin-top: 1.5%;
     margin-left: 48%;
     font-family: Arial, Helvetica, sans-serif;
@@ -616,7 +616,7 @@
     letter-spacing: 1px;
   }
   
-  #p2p1 {
+  #p2p1p1q {
     margin-top: 1.5%;
     margin-left: 58%;
     font-family: Arial, Helvetica, sans-serif;
@@ -625,7 +625,7 @@
     color: #109b1a;
   }
   
-  #hhh {
+  #hhhq {
     margin-top: 1.5%;
     margin-left: 55%;
     font-family: Arial, Helvetica, sans-serif;
@@ -633,7 +633,7 @@
     letter-spacing: 1px;
   }
   
-  #design {
+  #designq {
     display: flex;
     border: 1px solid #cccc;
     background-color: #dcf5fc;
@@ -645,7 +645,7 @@
   
   } */
   
-  #yay {
+  #yayq {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     margin-left: 4%;
@@ -653,10 +653,10 @@
     margin-bottom: 1%;
   }
   
-  .sub-menu {
+  .sub-menuq {
     padding: 17px;
   }
-  .sub-menu-wrap1 {
+  .sub-menu-wrap1q {
     cursor: pointer;
     /* border: red solid; */
     width: 97%;
@@ -669,13 +669,13 @@
       rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   }
   
-  .sub-menu-wrap1.open-menu {
+  .sub-menu-wrap1.open-menuq {
     max-height: 400px;
   }
   
   /* ----------------------------------------------------------------------------------------------------------- */
   
-  #p11 {
+  #p11q {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2.5%;
@@ -683,24 +683,24 @@
     letter-spacing: 1px;
   }
   
-  #p12 {
+  #p12q {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2.5%;
     margin-top: 1.5%;
   }
-  span {
+  /* span {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     color: #109b1a;
     margin-bottom: -2%;
-  }
-  #head2{
+  } */
+  #head2q{
     display: flex;
     justify-content: space-between;
   }
-  #head2 a{
+  #head2q a{
     text-decoration: none;
     color: black;
   }

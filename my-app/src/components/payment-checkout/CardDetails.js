@@ -1,206 +1,220 @@
-// import React from 'react'
-// import "./cardDetails.css"
+import React from 'react'
+import "./cardDetails.css"
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
-// export default function CardsDetails() {
-//   return (
-//     <div>
-//         <body>
-//     <div id="head2">
+
+export default function CardsDetails() {
+    let navigate = useNavigate()
+
+    let data = useSelector((arr)=>{
+        console.log(arr.singlePR)
+        return arr.singlePR
+    })
+
+    let total = 0;
+    for(var i=0;i<data.length;i++){
+        total += data[i].price*data[i].quantity;
+    }
+  return (
+    <div>
+        <body>
+    <div id="head2q">
        
-//        </div>
-//     <hr/>
-//     <div id="med">
-//         <div id="p3">
-//             <h1 id="head2ing">Choose payment method</h1>
-//             <br />
-//             <p id="p4">Choose the payment method you prefer</p>
-//         </div>
-//         <div id="pic">
-//             <img id="img1" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/payment-icon.svg" alt=""/>
-//         </div>
-//     </div>
-//     <h3 id="H3">Payment Method Options</h3>
+       </div>
+    <hr/>
+    <div id="medq">
+        <div id="p3q">
+            <h1 id="head2ingq">Choose payment method</h1>
+            <br />
+            <p id="p4q">Choose the payment method you prefer</p>
+        </div>
+        <div id="picq">
+            <img id="img1q" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/payment-icon.svg" alt=""/>
+        </div>
+    </div>
+    <h3 id="H3q">Payment Method Options</h3>
 
-//     <div id="main">
-//         <div id="card">
-//             <div id="cardDeatils">
-//                 <div id="icon">
-//                     <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Credit_Debit_Card.svg" alt=""/>
-//                 </div>
-//                 <div id="cardP">
-//                     <p id="cr">Credit/Debit Card</p>
-//                     <p id="dr">Visa, Mastercard, Rupay & more</p>
-//                 </div>
-//                 <img id="img2" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/dropdown-right-arrow.png" alt=""/>
+    <div id="mainq">
+        <div id="cardq">
+            <div id="cardDeatilsq">
+                <div id="iconq">
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Credit_Debit_Card.svg" alt=""/>
+                </div>
+                <div id="cardPq">
+                    <p id="crq">Credit/Debit Card</p>
+                    <p id="drq">Visa, Mastercard, Rupay & more</p>
+                </div>
+                <img id="img2q" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/dropdown-right-arrow.png" alt=""/>
               
-//             </div>
+            </div>
         
-//             <div id="cardssss">
-//             <div id="cardss">
-//                 <div id="icon1">
-//                     <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/UPI.svg" alt=""/>
-//                 </div>
-//                 <div id="cardP1">
-//                     <p id="cr1">UPI</p>
-//                     <p id="dr1">Google Pay, PhonePe, Paytm & more</p>
-//                 </div>
-//             </div>
+            <div id="cardssssq">
+            <div id="cardssq">
+                <div id="icon1q">
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/UPI.svg" alt=""/>
+                </div>
+                <div id="cardP1q">
+                    <p id="cr1q">UPI</p>
+                    <p id="dr1q">Google Pay, PhonePe, Paytm & more</p>
+                </div>
+            </div>
            
-//             <div id="cardss1">
-//                 <div id="icon2">
-//                     <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Netbanking.svg" alt=""/>
-//                 </div>
-//                 <div id="cardP2">
-//                     <p id="cr2">NetBanking</p>
-//                     <p id="dr2">Pay through your favourite bank</p>
-//                 </div>
-//             </div>
+            <div id="cardss1q">
+                <div id="icon2q">
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Netbanking.svg" alt=""/>
+                </div>
+                <div id="cardP2q">
+                    <p id="cr2q">NetBanking</p>
+                    <p id="dr2q">Pay through your favourite bank</p>
+                </div>
+            </div>
 
             
-//             <div id="cardss2">
-//                 <div id="icon3">
-//                     <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Snpl.svg" alt=""/>
-//                 </div>
-//                 <div id="cardP3">
-//                     <p id="cr3">Shop now & Pay later</p>
-//                     <p id="dr3">Zest money, Simpl & more</p>
-//                 </div>
-//             </div>
+            <div id="cardss2q">
+                <div id="icon3q">
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Snpl.svg" alt=""/>
+                </div>
+                <div id="cardP3q">
+                    <p id="cr3q">Shop now & Pay later</p>
+                    <p id="dr3q">Zest money, Simpl & more</p>
+                </div>
+            </div>
 
-//             <div id="cardss3">
-//                 <div id="icon4">
-//                     <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/PaytmPaymentOption.svg" alt=""/>
-//                 </div>
-//                 <div id="cardP4">
-//                     <p id="cr4">Paytm Wallet</p>
-//                     <p id="dr4">Link your Paytm wallet and pay</p>
-//                </div>
-//             </div>
+            <div id="cardss3q">
+                <div id="icon4q">
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/PaytmPaymentOption.svg" alt=""/>
+                </div>
+                <div id="cardP4q">
+                    <p id="cr4q">Paytm Wallet</p>
+                    <p id="dr4q">Link your Paytm wallet and pay</p>
+               </div>
+            </div>
 
-//             <div id="cardss4">
-//                 <div id="icon5">
-//                     <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/GiftCard.svg" alt=""/>
-//                 </div>
-//                 <div id="cardP5">
-//                     <p id="cr5">Gift card</p>
-//                     <p id="dr5">One card for all Nykaa apps</p>
-//                </div>
-//             </div>
+            <div id="cardss4q">
+                <div id="icon5q">
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/GiftCard.svg" alt=""/>
+                </div>
+                <div id="cardP5q">
+                    <p id="cr5q">Gift card</p>
+                    <p id="dr5q">One card for all Nykaa apps</p>
+               </div>
+            </div>
 
-//             <div id="cardss5">
-//                 <div id="icon6">
-//                     <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/EMI.svg" alt=""/>
-//                 </div>
-//                 <div id="cardP6">
-//                     <p id="cr6">EMI</p>
-//                     <p id="dr6">Easy installments</p>
-//                </div>
-//             </div>
+            <div id="cardss5q">
+                <div id="icon6q">
+                    <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/EMI.svg" alt=""/>
+                </div>
+                <div id="cardP6q">
+                    <p id="cr6q">EMI</p>
+                    <p id="dr6q">Easy installments</p>
+               </div>
+            </div>
           
-//         </div>
+        </div>
           
-//         </div>
-//         <div id="cardsDetails">
-//             <h3 id="head22">Credit/Debit Card</h3>
-//             <hr id="line"/>
-//             <div id="logos">
-//                 <p id="p5">WE ACCEPT</p>
-//                 <img id="img3" src="https://www.lyra.com/in/wp-content/uploads/sites/8/2020/03/card-schemes.png" alt=""/>
-//             </div>
+        </div>
+        <div id="cardsDetailsq">
+            <h3 id="head22q">Credit/Debit Card</h3>
+            <hr id="lineq"/>
+            <div id="logosq">
+                <p id="p5q">WE ACCEPT</p>
+                <img id="img3q" src="https://www.lyra.com/in/wp-content/uploads/sites/8/2020/03/card-schemes.png" alt=""/>
+            </div>
 
-//             <form id="form" action="">
-//                 <input id="cardNumber" type="text" placeholder="Card Number"/><br/>
-//                 <input type="text" name="" id="expiry" placeholder="Expiry(MM/YY)"/>
-//                 <input type="password" name="" id="cvv" placeholder="CVV"/>
-//                 <div id="checked">
-//                     <input type="checkbox" name="" id="check"/>
-//                     <p id="p6">Save this card securely for future</p>
-//                 </div>
-//                 <input id="submit" type="submit" value="Pay"/>
+            <div id="formq" action="">
+                <input id="cardNumberq" type="text" placeholder="Card Number"/><br/>
+                <input type="text" name="" id="expiryq" placeholder="Expiry(MM/YY)"/>
+                <input type="password" name="" id="cvvq" placeholder="CVV"/>
+                <div id="checkedq">
+                    <input type="checkbox" name="" id="checkq"/>
+                    <p id="p6q">Save this card securely for future</p>
+                </div>
+                <button onClick={()=>{navigate("/thankyou")}} id="submitq" type="submit" value="Pay">Pay</button>
                 
-//             </form>
+            </div>
     
-//         </div>
+        </div>
     
     
 
-//         <div id="bagDetails">
+        <div id="bagDetailsq">
             
-//             {/* <!-- --------------------------------------------------------------------------------------------- --> */}
+            {/* <!-- --------------------------------------------------------------------------------------------- --> */}
 
-//             <div class="sub-menu-wrap" id="subMenu">
-//                 <div class="sub-menu">
-//                     <div class="user-info">
+            <div class="sub-menu-wrapq" id="subMenuq">
+                <div class="sub-menuq">
+                    <div class="user-infoq">
                        
-//                         <div id="fetchAddress">
-//                             {/* <!-- <p id="i1">Animesh Kumar</p>
-//                             <p id="i2">Barola Sector 49 NEAR-SSC PUBLIC SCHOOL,</p>
-//                             <p id="i3">Uttar Pradesh</p>
-//                             <p id="i4">Noida-201301</p>
-//                             <p id="i5">7667694853</p>  --> */}
+                        <div id="fetchAddressq">
+                            {/* <!-- <p id="i1">Animesh Kumar</p>
+                            <p id="i2">Barola Sector 49 NEAR-SSC PUBLIC SCHOOL,</p>
+                            <p id="i3">Uttar Pradesh</p>
+                            <p id="i4">Noida-201301</p>
+                            <p id="i5">7667694853</p>  --> */}
                             
-//                         </div>
+                        </div>
                        
                        
-//                     </div>
+                    </div>
                 
-//                 </div>
-//               </div>
+                </div>
+              </div>
 
-//             {/* <!-- ------------------------------------------------------------------------------------------------ --> */}
+            {/* <!-- ------------------------------------------------------------------------------------------------ --> */}
 
-//             <div id="bag2" onclick="toggleMenus()">
-//                 <h4 id="H6">Price Details <br/><span>You are saving ₹0</span></h4>
-//                 <p id="p9"></p>
-//                 <span>Rs.1000.00</span>
-//             </div>
+            <div id="bag2q" onclick="toggleMenus()">
+                <h4 id="H6q">Price Details <br/><span>You are saving ₹{Math.round(total*0.1)}</span></h4>
+                <p id="p9q"></p>
+                <span>Rs.{total}</span>
+            </div>
 
 
 
-//             {/* <!-- --------------------------------------------------------------------------------------- --> */}
+            {/* <!-- --------------------------------------------------------------------------------------- --> */}
 
          
-//             <div class="sub-menu-wrap1" id="subMenus">
-//                 <div class="sub-menu">
-//                     <div class="user-info">
-//                         <div class="totalamnt">
-//                             <p id="p11">Total Amount</p>
-//                             <p id="p2p"></p>
-//                         </div>
+            <div class="sub-menu-wrap1q" id="subMenusq">
+                <div class="sub-menuq">
+                    <div class="user-infoq">
+                        <div class="totalamntq">
+                            <p id="p11q">Total Amount</p>
+                            <p id="p2pq"></p>
+                        </div>
 
-//                         <div class="shipping">
-//                             <p id="p11">Shipping</p>
-//                             <p id="p2p1">Free</p>
-//                         </div>
-//                         <hr/>
-//                         <div class="pay">
-//                             <h3 id="p12">You Pay</h3>
-//                             <h3 id="hhh"></h3>
-//                         </div>
-//                         <div id="design">
-//                             <img id="sign" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/3Success.svg" alt=""/>
-//                             <h4 id="yay">Yay! You will earn 549 Reward points</h4>
-//                         </div>
+                        <div class="shippingq">
+                            <p id="p11q">Shipping</p>
+                            <p id="p2p1p1q">Free</p>
+                        </div>
+                        <hr/>
+                        <div class="payq">
+                            <h3 id="p12q">You Pay</h3>
+                            <h3 id="hhhq"></h3>
+                        </div>
+                        <div id="designq">
+                            <img id="signq" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/3Success.svg" alt=""/>
+                            <h4 id="yayq">Yay! You will earn 549 Reward points</h4>
+                        </div>
                         
-//                     </div>
+                    </div>
                 
-//                 </div>
-//               </div>
+                </div>
+              </div>
 
 
 
-//             {/* <!-- ------------------------------------------------------------------------------------------ --> */}
+            {/* <!-- ------------------------------------------------------------------------------------------ --> */}
 
-//             <div id="bag3">
-//                 <p id="p10">Buy authentic products. Pay securely.<br/> Easy returns and exchange</p>
-//                 <img id="lock" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/pay-secure-lock.png" alt=""/>
-//             </div>
+            <div id="bag3q">
+                <p id="p10q">Buy authentic products. Pay securely.<br/> Easy returns and exchange</p>
+                <img id="lockq" src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/pay-secure-lock.png" alt=""/>
+            </div>
 
-//         </div>
+        </div>
     
-//     </div>
+    </div>
 
-// </body>
-//     </div>
-//   )
-// }
+</body>
+    </div>
+  )
+}
