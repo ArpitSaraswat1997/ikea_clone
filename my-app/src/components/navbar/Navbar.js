@@ -138,7 +138,7 @@ export default function Navbar() {
           <div className="header2">
 
             <input
-            value=""
+            
               type="text" className="header__searchInput"
               placeholder="What are you looking for?"
               onChange={handleFilter} />
@@ -198,7 +198,7 @@ export default function Navbar() {
             </div>
             <div class="offcanvas-body">
               <div id="loggin">
-                <h2>Hej</h2>
+                <h2>Hej <span className="hej">{isAuth.isAuth?isAuth.signup.firstName.toUpperCase():""}</span></h2>
                 <button data-bs-dismiss="offcanvas" onClick={() => {
                   !isAuth.isAuth?navigate("/login"):dispatch(logout())
                 }}>{!isAuth.isAuth?"Login":"Logout"}</button>

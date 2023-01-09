@@ -1,8 +1,18 @@
 import React from 'react'
 import "./checkout.css"
-
+import { useSelector } from "react-redux";
 export default function Checkout() {
+  let data = useSelector((arr)=>{
+    console.log(arr.singlePR)
+    return arr.singlePR
+})
+let total = 0;
+for(var i=0;i<data.length;i++){
+    total += data[i].price*data[i].quantity;
+}
     return (
+
+      
       <div>
       {/* <div className='checkout-page'>
          <div>
@@ -106,11 +116,11 @@ export default function Checkout() {
     <div id="main">
       <div class="headerdiv">
         <div class="header">
-          <img
+          {/* <img
             src="https://www.ikea.com/us/en/static/ikea-logo.f7d9229f806b59ec64cb.svg"
             alt=""
-          />
-          <a href="homepage2.html">Continue Shopping</a>
+          /> */}
+          {/* <a href="homepage2.html">Continue Shopping</a> */}
         </div>
       </div>
       <div class="formhead">
@@ -213,13 +223,14 @@ export default function Checkout() {
             <h1>Order Summary</h1>
             <hr />
             <div class="itemvalue">
-              <p class="left">Items Subtotal :</p>
+             
+            
               <br />
               <p class="totval"></p>
               <br />
-              <p class="left">Tax total :</p>
+              <p class="left">Sub total :</p>
               <br />
-              <p class="right">00.00</p>
+              <p class="right">{total}</p>
               <br />
               <p class="left">Shipping:</p>
               <br />
@@ -231,7 +242,7 @@ export default function Checkout() {
               <br />
            
               <p class="fintag">Order Total:</p>
-              <p class="finval"></p>
+              <p class="finval">{total}</p>
               <hr class="green" />
               <div class="gettxt">
                 <div class="alerttxt">

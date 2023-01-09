@@ -31,6 +31,10 @@
     height: 24px;
     margin-right: 3px;
   }
+  .containerBox{
+    display: grid;
+    grid-template-columns: 1,1fr;
+  }
   
   /* ---------------------- yellow offer-banner end --------------------------------- */
   
@@ -279,12 +283,14 @@
   
   .big-banner img{
     height: 100%;
+    width: 100%;
   }
   
   .big-banner-text-container{
     margin-left: 50px;
     padding: 30px 40px 50px 32px;
     color: white;
+    
   }
   
   .big-banner-text-container h2{

@@ -12,6 +12,7 @@ import Login from './components/login-signup/login'
 import Checkout1 from './components/payment-checkout/checkOut1';
 import Checkout from './components/payment-checkout/Checkout';
 import {Routes,Route} from "react-router-dom"
+import CardsDetails from './components/payment-checkout/CardDetails';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path = "/cart" element = {<Cart />} />
         <Route path='/checkout' element = {<Checkout1 />} />
         <Route path = "/checkout2" element = {<Checkout />} />
+        {/* <Route path ="/cardDetails" element={<CardsDetails/>}/> */}
       </Routes>
       {/* <SingleProduct /> */}
       {/* <Cart /> */}
