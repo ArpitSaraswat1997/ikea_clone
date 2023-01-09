@@ -9,11 +9,14 @@ import Cart from './components/cart/cart'
 import ProductPage from './components/product page/ProductListing';
 import Signup from './components/login-signup/Signup'
 import Login from './components/login-signup/login'
+import Checkout1 from './components/payment-checkout/checkOut1';
+import Checkout from './components/payment-checkout/Checkout';
 import {Routes,Route} from "react-router-dom"
 
 function App() {
   return (
     <div>
+      
       <Navbar/>
       <Routes >
         <Route path='/' element = {<Homepage />} />
@@ -22,6 +25,8 @@ function App() {
         <Route path = '/products' element = {<ProductPage />} />
         <Route path = "/products/:id" element = {<SingleProduct />} />
         <Route path = "/cart" element = {<Cart />} />
+        <Route path='/checkout' element = {<Checkout1 />} />
+        <Route path = "/checkout2" element = {<Checkout />} />
       </Routes>
       {/* <SingleProduct /> */}
       {/* <Cart /> */}
