@@ -196,8 +196,14 @@ text-decoration: underline;
     padding: 20px;
     z-index: 1;
  
-    position: absolute;
+    position: relative;
+    /* position: absolute; */
 
+}
+.final-Data{
+    position: absolute;
+    top: 90px;
+    left: 10px;
 }
 .final-Data li:hover{
     font-weight: bolder ;
@@ -214,9 +220,9 @@ text-decoration: underline;
   }
   @media screen and (max-width:1450px) {
     
-    .hej{
+    /* .hej{
         display: none;
-    }
+    } */
        
   }
   @media screen and (max-width:700px) {

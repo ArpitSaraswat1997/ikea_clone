@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./checkout.css"
 import { useSelector } from "react-redux";
 export default function Checkout() {
@@ -6,110 +6,37 @@ export default function Checkout() {
     console.log(arr.singlePR)
     return arr.singlePR
 })
-let total = 0;
-for(var i=0;i<data.length;i++){
-    total += data[i].price*data[i].quantity;
+let [coupen,setCoupen] = useState("")
+let [total,setTotal] = useState(0)
+useEffect(()=>{
+  let tot = 0
+  for(var i=0;i<data.length;i++){
+    tot += data[i].price*data[i].quantity;
+    setTotal(tot)
 }
+},[])
+
+  function applyCoupen(){
+    console.log("applyCoupen")
+    if(coupen === "masai"){
+      let discount = Math.round(total*0.9)
+      // Math.round(discount)
+      setTotal(discount)
+      alert("coupen applied successfully! You got 10% Discount") 
+    } 
+    else alert("invalid coupon")
+  }
+
+  function handleInput(e){
+    console.log(e.target.value)
+    setCoupen(e.target.value)
+  }
+
     return (
 
       
       <div>
-      {/* <div className='checkout-page'>
-         <div>
-          <div className="coupan-code">
-          <p>Add your promo/coupan here</p>
-          <div className='input'>
-            <input type="text" placeholder='Add Promo/Coupan' className='input-data' />
-             <button className='input-btn'>Apply</button>
-          </div>
-         <p>Only onr promo/coupan code per order</p>
-        </div>
-    </div>
-    <div>
-
-        <div className='total-amount'>
-        <h3>Order summary</h3>
-        <div className="allData">
-
-        <p>Order value</p>
-        <p>Rs.699.00</p>
-        </div>
-        <div className='allData'>
-
-        <p>Delivery fee/Picking fee</p>
-        <p>Rs.159.00</p>
-        </div>
-       
-        </div>
-        <p>__________________________________</p>
-
-        <div className='amount'>
-            <h3>Total amount:</h3>
-            <h5>Rs. 858.00</h5>
-        </div>
-       <div className='cards'>
-
-        <li><img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" alt="" /></li>
-        <li><img src="https://imageio.forbes.com/blogs-images/steveolenski/files/2016/07/Mastercard_new_logo-1200x865.jpg?format=jpg&width=960" alt="" /></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_yjuA8BPTuHbw5S6vPoZidgjblLgPc4ATFlznDQ-&s" alt="" /></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2h0cK0G76RFiD408WOH9Nnff0X9cNF94KW10P8elxxQpOC5WjkXg5Nj_b7L2AiEwsNTs&usqp=CAU" alt="" /></li>
-        <li><img src="https://static.vecteezy.com/system/resources/thumbnails/007/501/900/small/wallet-saving-money-solid-line-icon-illustration-logo-template-suitable-for-many-purposes-vector.jpg" alt="" /></li>
-        <li><img src="https://w7.pngwing.com/pngs/123/955/png-transparent-india-rupay-debit-card-bank-credit-card-india-text-trademark-logo.png" alt="" /></li>
-
-       </div>
-       <div style={{display:"flex",marginTop:"80px",justifyContent:"end"}}>
-
-       <button style={{backgroundColor:"blue",color:"white",border:"none",borderRadius:"5px",padding:"8px"}}> placeOrder</button>
-       </div>
-        </div>
-
-
-        
-
-    </div>
-    <div className='all-footer'>
-         
-    <div className='footercart'>
-     <div>
-     <span class="material-symbols-outlined">local_shipping</span>
-     </div>
-     <div>
-
-     <p>Our deliveryService <br />
-     Safe & contact less service <br />
-     according to government <br />
-     permsion</p>
-     </div>
-    </div>
-
-
-    <div className='footercart'>
-     <div>
-     <span class="material-symbols-outlined">local_shipping</span>
-     </div>
-     <div>
-
-     <p>Our deliveryService <br />
-     Safe & contact less service <br />
-     according to government <br />
-     permsion</p>
-     </div>
-    </div>
-
-
-    <div className='footercart'>
-     <div>
-     <span class="material-symbols-outlined">local_shipping</span>
-     </div>
-     <div>
-
-     <p>Our deliveryService <br />
-     Safe & contact less service <br />
-     according to government <br />
-     permsion</p>
-     </div>
-    </div>
-   </div> */}
+     
 
 
 <body>
@@ -210,9 +137,9 @@ for(var i=0;i<data.length;i++){
               <div class="couponbox">
                 <label for="" class="couponlabel">
                   Coupon Code:
-                  <input type="text" id="getcode" />
+                  <input onChange={handleInput} type="text" id="getcode" />
                 </label>
-                <button class="aplbtn" onclick="applycode()">Apply</button>
+                <button onClick = {applyCoupen} class="aplbtn">Apply</button>
                 <p id="couponmsg"></p>
               </div>
             </div>
@@ -223,6 +150,15 @@ for(var i=0;i<data.length;i++){
             <h1>Order Summary</h1>
             <hr />
             <div class="itemvalue">
+
+              {/* <div style={{display:"flex",justifyContent:"space-between"}}>
+              <p class="left">Sub total :</p>
+              <p class="right">{total}</p>
+              </div>
+              <div style={{display:"flex",justifyContent:"space-between"}}>
+                <p class="left">Shipping:</p>
+                <p class="right">Free</p>
+              </div> */}
              
             
               <br />
