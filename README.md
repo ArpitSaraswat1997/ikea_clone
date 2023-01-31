@@ -148,6 +148,26 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 <br>
 <br>
+
+- ## <span style="color:blue"> Single Product Page</span>
+ <div align="center">
+ 
+  <div style="display: flex;">
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810469-94536ebb-4474-4bd3-816f-ba9491f620b5.png
+" style="vertical-align: top;" /> 
+   
+    
+     
+  </div>
+    
+   </div>
+</div>
+
+
+
+
+<br>
+<br>
  
 
 
@@ -187,44 +207,27 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue"> Trip Booking-Pickup and DropOff Location </span>
+- ## <span style="color:blue"> Payment Page </span>
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/91541289/146790575-3bd7f236-9c10-4a89-9514-f33e6a6e7461.png" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/91541289/146790585-0b592e99-624c-44f3-8656-26d5d69c9879.png" />
-    
-     
-  </div>
-    
-   </div>
-</div>
- 
-
-<br>
-<br>
- 
-
-
-- ## <span style="color:blue"> Single Product Page</span>
- <div align="center">
- 
-  <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810469-94536ebb-4474-4bd3-816f-ba9491f620b5.png
+   <div> <img width="450" src="![Screenshot (324)](https://user-images.githubusercontent.com/113497362/215818372-b33848c6-6e67-4ad8-84e9-3218490f6800.png)
 " style="vertical-align: top;" /> 
-   
+    <img width="450" src="" />
     
      
   </div>
     
    </div>
 </div>
-
-
-
+ 
 
 <br>
 <br>
+ 
+
+
+
  
 
 
