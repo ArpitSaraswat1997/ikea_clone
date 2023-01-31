@@ -175,7 +175,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="500" src="https://user-images.githubusercontent.com/91541289/141655244-ba41281a-fc77-4549-b960-30acb7f9f921.png" style="vertical-align: top;" /> 
+   <div> <img width="500" src="https://user-images.githubusercontent.com/113497362/215817410-6fb393e6-d7b7-4b79-9b37-cff8e022e4bb.png" style="vertical-align: top;" /> 
     
   </div>
     
