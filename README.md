@@ -153,8 +153,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810469-94536ebb-4474-4bd3-816f-ba9491f620b5.png
-" style="vertical-align: top;" /> 
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810469-94536ebb-4474-4bd3-816f-ba9491f620b5.png" style="vertical-align: top;" /> 
    
     
      
@@ -211,8 +210,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215818372-b33848c6-6e67-4ad8-84e9-3218490f6800.png
-" style="vertical-align: top;" /> 
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215818372-b33848c6-6e67-4ad8-84e9-3218490f6800.png" style="vertical-align: top;" /> 
     <img width="450" src="" />
     
      
@@ -235,8 +233,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="500" src="https://user-images.githubusercontent.com/113497362/215819054-1c1ee9aa-d3fd-427f-aaad-dd085be7f615.png
-" style="vertical-align: top;" /> 
+   <div> <img width="500" src="https://user-images.githubusercontent.com/113497362/215819054-1c1ee9aa-d3fd-427f-aaad-dd085be7f615.png" style="vertical-align: top;" /> 
     
   </div>
     
