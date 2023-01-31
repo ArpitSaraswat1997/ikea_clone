@@ -72,17 +72,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-# <span style="color:red"> Cloning of [Zoomcar](https://www.zoomcar.com/) WEBSITE -(Learning Purpose)</span>
+# <span style="color:red"> Cloning of [Ikea](https://www.ikea.com/us/en/) WEBSITE -(Learning Purpose)</span>
 
 # <span style="color:red"> Welcome Here!</span>
 
 Hello Readers,<br>
-It was during the final week which is depicted as the construct week. We have done this project with group of 5 members and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-6 and we give a name to our project called Zoomcar Project.<br> I hope you will enjoy the reading….
+It was during the final week which is depicted as the construct week. We have done this project with group of 4 members and build the clone of a very popular E-Commerce  Website in the India for “Home Appliances and home furnitiure”, “Ikea.com” for Learning Purpose<br> This Project is our construct week project in Unit-6 and we give a name to our project called Ikea Clone Project.<br> I hope you will enjoy the reading….
 
 # <span style="color:red"> About Website: </span>
 
- [Zoomcar](zoomcar-letsgo-boom.netlify.app) Zoomcar, is an Indian self-drive car rental company, headquartered in Bangalore, India. The company was founded in 2013 by David Back and Greg Moran. It currently operates in 34+ cities. 
- Self-drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self-drive car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. 
+ [Zoomcar](https://my-app-tau-neon.vercel.app/) IKEA, home furnishings retailer that was the world’s largest seller of furniture in the early 21st century, operating more than 300 stores around the world. IKEA specializes in low-priced goods, sold whenever possible in compact “flat-pack” form for in-home assembly by the customer. IKEA was founded (1943) in Sweden and still flaunts its origins—store exteriors are decorated in the colours of the Swedish flag (blue and yellow), in-store restaurants serve Swedish food, and the company’s products carry Swedish names—but its headquarters are now in the Netherlands.
 
 # <span style="color:red"> Tech Stack Used: </span>
 
@@ -102,11 +101,11 @@ We have used to add logical functionalities to the web pages like the on Click f
 
 
 # <span style="color:red"> Team members: </span>
-## 1) Adil Rana
-## 2) Abhishek khanna
-## 3) Siddhant 
-## 4) Siddhi 
-## 5) Ravinder
+## 1)  Arpit
+## 2) Bharat
+## 3) Saif
+## 4) Kaushal
+
 <br/>
 
 
@@ -124,8 +123,10 @@ This entire journey of making the project was awesome. We have learned lots of t
 <div align="center">
  
   <div style="display: flex;justify-content:space-between">
-   <div> <img src="https://user-images.githubusercontent.com/91541289/146790574-517f5a2e-d314-4795-9e8d-b28601cec36a.png" style="vertical-align: top;" /> 
-    <img src="https://user-images.githubusercontent.com/91541289/146790572-44d3aedf-62e3-442f-865e-ae5ee06c4293.png" />
+   <div> <img src="![Screenshot (316)](https://user-images.githubusercontent.com/113497362/215808527-915bf4d0-86ae-449e-b9ca-00e08e6acca1.png)
+" style="vertical-align: top;" /> 
+    <img src="![Screenshot (320)](https://user-images.githubusercontent.com/113497362/215808956-a2be48f7-0b45-4b37-95ab-f7f096015c3d.png)
+" />
   </div>
     
    </div>
@@ -135,14 +136,16 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue"> ZMS Page </span>
+- ## <span style="color:blue"> product Page </span>
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/91541289/146793779-9a561168-79aa-47b2-91a0-549f9e194f82.png" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/91541289/146793783-d43823fb-290d-4915-9107-732f3c15685b.png" />
+   <div> <img width="450" src="![Screenshot (318)](https://user-images.githubusercontent.com/113497362/215809216-aaab9d7a-06a9-49c6-9bde-7e4579d3fc84.png)" style="vertical-align: top;" /> 
+    <img width="450" src="![Screenshot (321)](https://user-images.githubusercontent.com/113497362/215809587-6ff10b0f-8b00-457a-8bd7-edf271ed8171.png)
+" />
   </div>
     
+
    </div>
 </div>
 
@@ -171,8 +174,10 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/91541289/146790584-98200afb-7240-4c2d-b81b-eb10046e0a89.png" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/91541289/146790578-02f3adf5-69ac-48b6-a595-4c7669911b5d.png" />
+   <div> <img width="450" src="![Screenshot (323)](https://user-images.githubusercontent.com/113497362/215810015-1c624be9-4ea6-479f-8947-195d6e569803.png)
+" style="vertical-align: top;" /> 
+    <img width="450" src="![Screenshot (322)](https://user-images.githubusercontent.com/113497362/215810094-6f43cfcc-2c36-425a-96d2-4a5a05a1e263.png)
+" />
   </div>
     
    </div>
@@ -218,12 +223,13 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue"> Car Booking Page</span>
+- ## <span style="color:blue"> Single Product Page</span>
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/91541289/146790595-8723b759-1445-484c-8dee-a2076857b946.png" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/91541289/146790593-4c7de262-4633-4e75-983e-5516cbedaea6.png" />
+   <div> <img width="450" src="![Screenshot (317)](https://user-images.githubusercontent.com/113497362/215810469-94536ebb-4474-4bd3-816f-ba9491f620b5.png)
+" style="vertical-align: top;" /> 
+   
     
      
   </div>
