@@ -171,10 +171,8 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810015-1c624be9-4ea6-479f-8947-195d6e569803.png
-" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/113497362/215810094-6f43cfcc-2c36-425a-96d2-4a5a05a1e263.png
-" />
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810015-1c624be9-4ea6-479f-8947-195d6e569803.png" style="vertical-align: top;" /> 
+    <img width="450" src="https://user-images.githubusercontent.com/113497362/215810094-6f43cfcc-2c36-425a-96d2-4a5a05a1e263.png" />
   </div>
     
    </div>
