@@ -124,7 +124,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  
   <div style="display: flex;justify-content:space-between">
    <div> <img src="(https://user-images.githubusercontent.com/113497362/215808527-915bf4d0-86ae-449e-b9ca-00e08e6acca1.png)" style="vertical-align: top;" /> 
-    <img src="(https://user-images.githubusercontent.com/113497362/215808956-a2be48f7-0b45-4b37-95ab-f7f096015c3d.png)" />
+    <img src="(https://user-images.githubusercontent.com/113497362/215808956-a2be48f7-0b45-4b37-95ab-f7f096015c3d.png)"/>
   </div>
     
    </div>
@@ -262,12 +262,12 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue"> Mode Of Payment </span>
+<!-- - ## <span style="color:blue"> Mode Of Payment </span>
  <div align="center">
  
   <div style="display: flex;">
    <div> <img width="450" src="https://user-images.githubusercontent.com/91541289/146790581-b69cd1a4-8c9b-4208-8181-e8314bb3cde7.png" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/91541289/141655237-e4c4b3e5-d120-49b4-8ded-9f840de87bf6.png" />
+    <img width="450" src="https://user-images.githubusercontent.com/91541289/141655237-e4c4b3e5-d120-49b4-8ded-9f840de87bf6.png" /> -->
     
      
   </div>
