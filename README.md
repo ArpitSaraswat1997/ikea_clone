@@ -151,19 +151,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue">  Become a Host Page </span>
- <div align="center">
- 
-  <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/91541289/146793768-899bd94a-851f-4054-817f-c8a0d4b6b443.png" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/91541289/146793775-67cb18be-9adb-44e6-b698-1a654a97f518.png" />
-  </div>
-    
-   </div>
-</div>
 
-<br>
-<br>
  
 
 
@@ -183,7 +171,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue">Trip Booking-Select City </span>
+- ## <span style="color:blue">Cart-Page </span>
  <div align="center">
  
   <div style="display: flex;">
