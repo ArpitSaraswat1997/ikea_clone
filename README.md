@@ -123,10 +123,8 @@ This entire journey of making the project was awesome. We have learned lots of t
 <div align="center">
  
   <div style="display: flex;justify-content:space-between">
-   <div> <img src="(https://user-images.githubusercontent.com/113497362/215808527-915bf4d0-86ae-449e-b9ca-00e08e6acca1.png)
-" style="vertical-align: top;" /> 
-    <img src="(https://user-images.githubusercontent.com/113497362/215808956-a2be48f7-0b45-4b37-95ab-f7f096015c3d.png)
-" />
+   <div> <img src="(https://user-images.githubusercontent.com/113497362/215808527-915bf4d0-86ae-449e-b9ca-00e08e6acca1.png)" style="vertical-align: top;" /> 
+    <img src="(https://user-images.githubusercontent.com/113497362/215808956-a2be48f7-0b45-4b37-95ab-f7f096015c3d.png)" />
   </div>
     
    </div>
