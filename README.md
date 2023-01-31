@@ -138,8 +138,8 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="(https://user-images.githubusercontent.com/113497362/215809216-aaab9d7a-06a9-49c6-9bde-7e4579d3fc84.png)" style="vertical-align: top;" /> 
-    <img width="450" src="(https://user-images.githubusercontent.com/113497362/215809587-6ff10b0f-8b00-457a-8bd7-edf271ed8171.png)
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215809216-aaab9d7a-06a9-49c6-9bde-7e4579d3fc84.png" style="vertical-align: top;" /> 
+    <img width="450" src="https://user-images.githubusercontent.com/113497362/215809587-6ff10b0f-8b00-457a-8bd7-edf271ed8171.png
 " />
   </div>
     
@@ -172,9 +172,9 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="![Screenshot (323)](https://user-images.githubusercontent.com/113497362/215810015-1c624be9-4ea6-479f-8947-195d6e569803.png)
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810015-1c624be9-4ea6-479f-8947-195d6e569803.png
 " style="vertical-align: top;" /> 
-    <img width="450" src="![Screenshot (322)](https://user-images.githubusercontent.com/113497362/215810094-6f43cfcc-2c36-425a-96d2-4a5a05a1e263.png)
+    <img width="450" src="https://user-images.githubusercontent.com/113497362/215810094-6f43cfcc-2c36-425a-96d2-4a5a05a1e263.png
 " />
   </div>
     
@@ -225,7 +225,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="![Screenshot (317)](https://user-images.githubusercontent.com/113497362/215810469-94536ebb-4474-4bd3-816f-ba9491f620b5.png)
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215810469-94536ebb-4474-4bd3-816f-ba9491f620b5.png
 " style="vertical-align: top;" /> 
    
     
