@@ -81,7 +81,7 @@ It was during the final week which is depicted as the construct week. We have do
 
 # <span style="color:red"> About Website: </span>
 
- [Zoomcar](https://my-app-tau-neon.vercel.app/) IKEA, home furnishings retailer that was the world’s largest seller of furniture in the early 21st century, operating more than 300 stores around the world. IKEA specializes in low-priced goods, sold whenever possible in compact “flat-pack” form for in-home assembly by the customer. IKEA was founded (1943) in Sweden and still flaunts its origins—store exteriors are decorated in the colours of the Swedish flag (blue and yellow), in-store restaurants serve Swedish food, and the company’s products carry Swedish names—but its headquarters are now in the Netherlands.
+ [Ikea](https://my-app-tau-neon.vercel.app/) IKEA, home furnishings retailer that was the world’s largest seller of furniture in the early 21st century, operating more than 300 stores around the world. IKEA specializes in low-priced goods, sold whenever possible in compact “flat-pack” form for in-home assembly by the customer. IKEA was founded (1943) in Sweden and still flaunts its origins—store exteriors are decorated in the colours of the Swedish flag (blue and yellow), in-store restaurants serve Swedish food, and the company’s products carry Swedish names—but its headquarters are now in the Netherlands.
 
 # <span style="color:red"> Tech Stack Used: </span>
 
