@@ -211,7 +211,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="450" src="![Screenshot (324)](https://user-images.githubusercontent.com/113497362/215818372-b33848c6-6e67-4ad8-84e9-3218490f6800.png)
+   <div> <img width="450" src="https://user-images.githubusercontent.com/113497362/215818372-b33848c6-6e67-4ad8-84e9-3218490f6800.png
 " style="vertical-align: top;" /> 
     <img width="450" src="" />
     
@@ -231,11 +231,12 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue"> Selected Car Details </span>
+- ## <span style="color:blue"> Checkout Page </span>
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="500" src="https://user-images.githubusercontent.com/91541289/146790592-97203e87-e95e-4a0f-9a05-e61907c82d88.png" style="vertical-align: top;" /> 
+   <div> <img width="500" src="https://user-images.githubusercontent.com/113497362/215819054-1c1ee9aa-d3fd-427f-aaad-dd085be7f615.png
+" style="vertical-align: top;" /> 
     
   </div>
     
