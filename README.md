@@ -104,7 +104,7 @@ We have used to add logical functionalities to the web pages like the on Click f
 ## 1)  Arpit
 ## 2) Bharat
 ## 3) Saif
-## 4) Kaushal
+## 4) Khushahal
 
 <br/>
 
