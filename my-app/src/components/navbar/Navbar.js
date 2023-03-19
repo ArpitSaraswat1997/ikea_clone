@@ -141,10 +141,7 @@ export default function Navbar() {
           <div className="header2">
 
             <input
-
-           
-              ref={inputRef}
-
+            
               type="text" className="header__searchInput"
               placeholder="What are you looking for?"
               onChange={handleFilter} />
@@ -161,13 +158,7 @@ export default function Navbar() {
 
                     <li className="details" onClick={() => {
                       navigate(`products/${items.id}`)
-
                     }}>{items.typeName}</li>
-
-                      inputRef.current.value = ""
-                      searchWord("")
-                    }}>{items.mainImageAlt}</li>
-
 
                   ))
               }
@@ -187,7 +178,7 @@ export default function Navbar() {
           >
             {" "}
             <li className="login-icon">
-              <span class="material-symbols-outlined"> person</span> <span style={{fontWeight:"bolder"}} className="hej">{isAuth.isAuth?isAuth.signup.firstName.toUpperCase():"Hej! Log in or sign up"}</span>
+              <span class="material-symbols-outlined"> person</span> <span className="hej">{isAuth.isAuth?isAuth.signup.firstName.toUpperCase():"Hej! Log in or sign up"}</span>
             </li>
           </button>
 
@@ -210,11 +201,7 @@ export default function Navbar() {
             </div>
             <div class="offcanvas-body">
               <div id="loggin">
-
                 <h2>Hej! <span className="hej">{isAuth.isAuth?isAuth.signup.firstName.toUpperCase():"Hej! "}</span></h2>
-
-                <h2>Hej <span className="hej">{isAuth.isAuth?isAuth.signup.firstName.toUpperCase():""}</span></h2>
-
                 <button data-bs-dismiss="offcanvas" onClick={() => {
                   !isAuth.isAuth?navigate("/login"):dispatch(logout())
                 }}>{!isAuth.isAuth?"Login":"Logout"}</button>
@@ -252,3 +239,4 @@ export default function Navbar() {
     </div>
   );
 }
+
