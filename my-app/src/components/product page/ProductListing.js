@@ -15,7 +15,7 @@ const ProductPage = () => {
   const dispatch = useDispatch();
   const fetchProducts = () => {
     console.log("sdkjflsdfjl")
-    axios.get("https://ik.onrender.com/productWindow")
+    axios.get("https://ikea-api-server.onrender.com/productWindow")
       .then((res) =>{
         // console.log(res)
         dispatch(setProducts(res.data));
