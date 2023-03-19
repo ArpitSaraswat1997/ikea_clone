@@ -1,0 +1,707 @@
+#head2q {
+    /* border: solid red; */
+    padding: 2px;
+    display: flex;
+  }
+  
+  #logoq {
+    margin-left: 3.5%;
+  }
+  #tickq {
+    margin-left: 19%;
+  }
+  #tickq {
+    margin-left: 6.5%;
+    margin-top: 1%;
+  }
+  #tickssq {
+    margin-left: 6%;
+  }
+  
+  #p1q {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+    letter-spacing: 1px;
+  }
+  #p2q {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+    letter-spacing: 1px;
+  }
+  
+  #a1q {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+  }
+  
+  #p3q {
+    /* border: red solid; */
+    margin-left: 5%;
+    width: 40%;
+    margin-top: -0.5%;
+  }
+  
+  #medq {
+    display: flex;
+  }
+  
+  #head2ingq {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-left: 17%;
+  }
+  #p4q {
+    margin-left: 17.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: -3.5%;
+  }
+  #picq {
+    margin-left: 23%;
+    /* border: red solid; */
+    margin-top: -0.7%;
+  }
+  
+  #H3q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 12.5%;
+    letter-spacing: 1px;
+  }
+  
+  #mainq {
+    /* border: solid red; */
+    display: flex;
+    margin-left: 12.5%;
+  }
+  
+  #cardDeatilsq {
+    /* border: solid red; */
+    display: flex;
+    width: 120%;
+    border: 1px solid #ccc;
+    padding-right: 2%;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    /* margin-left: 3%; */
+  }
+  #iconq {
+    /* border: solid red; */
+    margin-left: 2%;
+    margin-top: 8%;
+    margin-left: 10%;
+  }
+  #cardsDetailsq {
+    /* border: solid red; */
+    margin-left: 8%;
+    width: 32%;
+    padding: 5px;
+  }
+  
+  #crq {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.5px;
+    font-weight: 60px;
+  }
+  #drq {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -5%;
+  }
+  #cardPq {
+    /* border: red solid; */
+    width: 90%;
+    margin-left: 4%;
+  }
+  #img2q {
+    width: 3%;
+    height: 5%;
+    margin-left: 5%;
+    margin-top: 7%;
+  }
+  #cardssq {
+    /* border: 2px soild red; */
+    display: flex;
+    width: 120%;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+  
+  #icon1q {
+    /* border: solid red; */
+    margin-left: 2%;
+    margin-top: 10%;
+    margin-left: 6%;
+  }
+  #cr1q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.5px;
+    font-weight: 60px;
+    margin-top: 10%;
+  }
+  #dr1q {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -4%;
+  }
+  
+  #cardP1q {
+    /* border: red solid; */
+    width: 90%;
+    margin-left: 3%;
+  }
+  
+  #cardss1q {
+    /* border: 2px soild red; */
+    display: flex;
+    width: 120%;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+  
+  #icon2q {
+    /* border: solid red; */
+    margin-left: 7%;
+    margin-top: 10.5%;
+  }
+  #cr2q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.5px;
+    font-weight: 60px;
+    margin-top: 10%;
+  }
+  #dr2q {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -4%;
+  }
+  
+  #cardP2q {
+    /* border: red solid; */
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  #cardss2q {
+    /* border: 2px soild red; */
+    display: flex;
+    width: 120%;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+  
+  #icon3q {
+    /* border: solid red; */
+    margin-left: 7%;
+    margin-top: 11%;
+  }
+  #cr3q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.5px;
+    font-weight: 60px;
+    margin-top: 10%;
+  }
+  #dr3q {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -4%;
+  }
+  
+  #cardP3q {
+    /* border: red solid; */
+    width: 90%;
+    margin-left: 3%;
+  }
+  
+  #cardss3q {
+    /* border: 2px soild red; */
+    display: flex;
+    width: 120%;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+  
+  #icon4q {
+    /* border: solid red; */
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+  #cr4q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.5px;
+    font-weight: 60px;
+    margin-top: 10%;
+  }
+  #dr4q {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -4%;
+  }
+  
+  #cardP4q {
+    /* border: red solid; */
+    width: 90%;
+    margin-left: 3%;
+  }
+  
+  #cardss4q {
+    /* border: 2px soild red; */
+    display: flex;
+    width: 120%;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+  
+  #icon5q {
+    /* border: solid red; */
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+  #cr5q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.5px;
+    font-weight: 60px;
+    margin-top: 10%;
+  }
+  #dr5q {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -4%;
+  }
+  
+  #cardP5q {
+    /* border: red solid; */
+    width: 90%;
+    margin-left: 3%;
+  }
+  
+  #cardss5q {
+    /* border: 2px soild red; */
+    display: flex;
+    width: 120%;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+  
+  #icon6q {
+    /* border: solid red; */
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+  #cr6q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.5px;
+    font-weight: 60px;
+    margin-top: 10%;
+  }
+  #dr6q {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -4%;
+  }
+  
+  #cardP6q {
+    /* border: red solid; */
+    width: 90%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+  }
+  #head22q {
+    letter-spacing: 1px;
+    margin-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 3%;
+  }
+  #lineq {
+    margin-top: -1.5%;
+  
+    border: 1px solid #cccccc;
+  }
+  #logosq {
+    display: flex;
+  }
+  #p5q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 1%;
+  }
+  #img3q {
+    box-sizing: border-box;
+    width: 50%;
+    height: 20%;
+    margin-left: 1%;
+  }
+  #formq {
+    /* border: red solid; */
+    margin-top: 2%;
+    padding: 1px;
+  }
+  #cardNumberq {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f0f3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  #expiryq {
+    padding: 15px;
+    width: 39.2%;
+    font-size: 17px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f0f3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  #cvvq {
+    padding: 15px;
+    width: 39.2%;
+    font-size: 17px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 6px;
+    margin-left: 4%;
+    background-color: #f1f0f3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  #checkedq {
+    display: flex;
+  }
+  input[type="checkbox"] {
+    height: 17px;
+    width: 17px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #checkq {
+    margin-top: 3%;
+  }
+  #p6q {
+    margin-top: 3.5%;
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  #submitq {
+    width: 100%;
+    /* padding: 15px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #ccc;
+    background-color: #0058a2;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    /* padding-bottom: 10px; */
+
+  }
+  
+  #cardssssq {
+    /* border: solid red; */
+    width: 122.5%;
+    background-color: #f2eff7;
+  }
+  
+  #bagDetailsq {
+    /* border: solid red; */
+    margin-left: 3%;
+    width: 28%;
+    margin-top: -2.3%;
+  }
+  #bagq {
+    display: flex;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0px 0px;
+    /* border: solid red; */
+  }
+  #p7q {
+    margin-left: 58%;
+    margin-top: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  #H4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+    font-size: 16px;
+    margin-bottom: -5%;
+  }
+  #aeroq {
+    margin-left: 5%;
+  }
+  
+  #bag1q {
+    display: flex;
+    padding: 3px;
+    margin-top: -0.5%;
+    border: 1px solid #ccc;
+    border-bottom-color: white;
+    /* border: solid red; */
+  }
+  #aerossq {
+    margin-left: 5%;
+    margin-top: -2%;
+  }
+  
+  #p8q {
+    margin-left: 8%;
+    margin-top: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+  }
+  #H5q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+    font-size: 16px;
+  }
+  
+  #bag2q {
+    display: flex;
+    padding: 3px;
+    border: 1px solid #ccc;
+    margin-top: -0.5%;
+    margin-bottom: 1%;
+    border-radius: 0px 0px 10px 10px;
+    /* border: solid red; */
+  }
+  #aerosq {
+    margin-left: 5%;
+    margin-top: -8%;
+  }
+  
+  #p9q {
+    margin-left: 34%;
+    margin-top: 6.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+  }
+  #H6q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+    font-size: 16px;
+  }
+  #bag3 {
+    display: flex;
+    margin-top: 3%;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #f2eff7;
+  }
+  
+  #lockq {
+    height: 5%;
+    margin-left: 10%;
+  }
+  
+  #p10q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+  }
+  
+  /* ------------------------------------------------------------------------------------- */
+  
+  #fetchAddressq {
+    /* border: red solid; */
+    /* margin-left: 2%; */
+    width: 100%;
+    /* height: 225px; */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-left: 3%;
+    padding-right: 2%;
+  }
+  
+  #i1q {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+  #i2q {
+    margin-top: -2%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #i3q {
+    margin-top: -3%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  #i4q {
+    margin-top: -3%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+  #i5q {
+    margin-top: -3%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .sub-menuq {
+    padding: 17px;
+  }
+  .sub-menu-wrapq {
+    /* border: red solid; */
+    /* border-radius: 0 0 10PX 10PX; */
+    width: 97%;
+    margin: auto;
+    margin-bottom: 1%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  
+  .sub-menu-wrap.open-menuq {
+    max-height: 400px;
+  }
+  /* --------------------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------------------------------- */
+  
+  .totalamntq {
+    display: flex;
+  }
+  
+  .shippingq {
+    display: flex;
+  }
+  
+  .payq {
+    display: flex;
+  }
+  
+  #p2pq {
+    margin-top: 1.5%;
+    margin-left: 48%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  #p2p1p1q {
+    margin-top: 1.5%;
+    margin-left: 58%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #109b1a;
+  }
+  
+  #hhhq {
+    margin-top: 1.5%;
+    margin-left: 55%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  
+  #designq {
+    display: flex;
+    border: 1px solid #cccc;
+    background-color: #dcf5fc;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  /* #sign{
+  
+  } */
+  
+  #yayq {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .sub-menuq {
+    padding: 17px;
+  }
+  .sub-menu-wrap1q {
+    cursor: pointer;
+    /* border: red solid; */
+    width: 97%;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  
+  .sub-menu-wrap1.open-menuq {
+    max-height: 400px;
+  }
+  
+  /* ----------------------------------------------------------------------------------------------------------- */
+  
+  #p11q {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+    letter-spacing: 1px;
+  }
+  
+  #p12q {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+  }
+  /* span {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #109b1a;
+    margin-bottom: -2%;
+  } */
+  #head2q{
+    display: flex;
+    justify-content: space-between;
+  }
+  #head2q a{
+    text-decoration: none;
+    color: black;
+  }
+  

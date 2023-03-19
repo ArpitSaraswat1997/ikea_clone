@@ -45,6 +45,8 @@ function SingleProduct() {
             })
     }, [])
 
+    const [availability,setAvailbility] =useState('')
+
 
 const[delivery,setDelivery]=useState()
     const deliverySatus =()=>{
@@ -53,7 +55,12 @@ const[delivery,setDelivery]=useState()
     }
     
 
+    function checkDelivery(){
+        setAvailbility("Yes Delivery Available at your Location")
+    }
 
+
+console.log(availability);
     function addToCart() {
         let value = {
             id: obj.id,
@@ -114,12 +121,21 @@ const[delivery,setDelivery]=useState()
                             </div>
                             <div className="pinCheck1">
                                 <input type="text" placeholder="Enter pin code" />
+
                                 <button onClick={deliverySatus} >Check</button>
                             </div>
                             <div className="delivey1">
                                 <div><p style={{ fontSize: "25px" }} ><GrDeliver /></p></div>
                                 <div><p></p></div>
                                 <div><p style={{ marginTop: "10px", fontSize: "14px", color: "rgb(109, 106, 106)" }}>Please enter pin code to check home delivery availability.</p></div>
+
+                                <button onClick={checkDelivery} >Check</button>
+                            </div>
+                            <div className="delivey1">
+                                <div><p style={{ fontSize: "25px" }} ></p></div>
+                                <p></p>
+                                <div><p style={{ marginTop: "10px", fontSize: "14px", color: "Green" }}>{availability}</p></div>
+
                             </div>
                             {/* Slidebar Using Bootstrap */}
                             <button onClick={addToCart} className="addToCart1" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><HiOutlineShoppingCart /> Add to Cart</button>
