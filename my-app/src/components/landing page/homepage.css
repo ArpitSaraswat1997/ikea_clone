@@ -460,6 +460,9 @@
   .ideas-container div{
     text-align: center;
   }
+  .containerBox{
+    display: grid;
+  }
   
   #first-column2{
     object-fit: cover;

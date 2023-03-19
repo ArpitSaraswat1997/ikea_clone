@@ -56,7 +56,7 @@ export default function Homepage() {
         <div class="img-gallery-2">
             <h1>HAUGA livingroom series</h1>
             <p>Decorate your space with HAUGA white or grey living room furniture sets. These multitasking storage units can both hide away clutter and display your most precious belongings.</p>
-            <div class="container">
+            <div class="containerBox">
                 <div class="gallery">
                     <figure class="gallery__item-1">
                         <img src="https://www.ikea.com/ext/ingkadam/m/3094bf9b3a4500d5/original/PH173350-crop002.jpg" alt="Gallery 2 image 1" class="gallery__img"/>

@@ -36,7 +36,7 @@ function SingleProduct() {
     // let id = "60475019"
 
     useEffect(() => {
-        fetch(`https://ik.onrender.com/productWindow/${id}`)
+        fetch(`https://ikea-api-server.onrender.com/productWindow/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
@@ -46,6 +46,12 @@ function SingleProduct() {
     }, [])
 
 
+const[delivery,setDelivery]=useState()
+    const deliverySatus =()=>{
+        alert("delivey Available")
+        setDelivery("")
+    }
+    
 
 
     function addToCart() {
@@ -108,10 +114,11 @@ function SingleProduct() {
                             </div>
                             <div className="pinCheck1">
                                 <input type="text" placeholder="Enter pin code" />
-                                <button >Check</button>
+                                <button onClick={deliverySatus} >Check</button>
                             </div>
                             <div className="delivey1">
                                 <div><p style={{ fontSize: "25px" }} ><GrDeliver /></p></div>
+                                <div><p></p></div>
                                 <div><p style={{ marginTop: "10px", fontSize: "14px", color: "rgb(109, 106, 106)" }}>Please enter pin code to check home delivery availability.</p></div>
                             </div>
                             {/* Slidebar Using Bootstrap */}
